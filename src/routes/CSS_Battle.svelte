@@ -1,12 +1,8 @@
 <div class="main">
-    <div class="grid">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-    <div class="circle"></div>
+	<div class="grid">
+		<div></div>
+	</div>
+	<div class="circle"></div>
 </div>
 
 <style>
@@ -22,27 +18,5 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-        opacity:50%;
-        &>.grid{
-            height:179px;
-            width:400px;
-            display:grid;
-            grid-template-rows: repeat(5, 20px);
-            gap: 20px 0;
-            &>div{
-                height:20px;
-                width: 400px;
-                background-color:#F3AC3C;
-            }
-        }
-        &>.circle{
-            position:absolute;
-            height:300px;
-            aspect-ratio:1;
-            border-radius:50%;
-            transform:translate(-200px, 0);
-            box-shadow: 400px 0px 0px #1A4341;
-            background-color:#1A4341;
-        }
 	}
 </style>
