@@ -19,7 +19,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-        background-color:var(--light_blue);
+		background-color: var(--light_blue);
 		& > .house {
 			height: 100px;
 			width: 150px;
