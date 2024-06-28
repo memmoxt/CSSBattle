@@ -25,7 +25,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		background-color:var(--black);
+		background-color: var(--black);
 		& > .flower {
 			height: 110px;
 			width: 140px;
