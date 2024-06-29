@@ -22,7 +22,7 @@
 		justify-content: center;
 		align-items: center;
 		overflow: hidden;
-		/* background-color: var(--black); */
+		background-color: var(--black);
 		&:before {
 			content: '';
 			position: absolute;
@@ -99,4 +99,3 @@
 		}
 	}
 </style>
-
