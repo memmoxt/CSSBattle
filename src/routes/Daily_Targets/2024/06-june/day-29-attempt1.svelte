@@ -34,8 +34,8 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		background-color:var(--orange);
-		overflow:hidden;
+		background-color: var(--orange);
+		overflow: hidden;
 		& > .center {
 			height: 120px;
 			width: 400px;
@@ -45,13 +45,19 @@
 				background-color: var(--yellow);
 			}
 			& > .first-row {
-				display: flex;
+				/* border:1px solid blue; */
+				height: 70px;
+				margin-bottom: -20px;
+				display: grid;
+				grid-template-columns: repeat(5, auto);
 				justify-content: space-around;
 			}
 			& > .second-row {
-				display: flex;
+				height: 70px;
+				display: grid;
 				justify-content: space-around;
-                margin: -20px -40px;
+				gap: 20px;
+				grid-template-columns: repeat(6, 60px);
 			}
 		}
 	}
