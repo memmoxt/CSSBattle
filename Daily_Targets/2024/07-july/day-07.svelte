@@ -14,7 +14,7 @@
 	.main {
 		height: 300px;
 		width: 400px;
-		background-color:var(--fuchsia);
+		background-color: var(--fuchsia);
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -33,9 +33,9 @@
 				left: 40px;
 				border-radius: 50px 0 0 50px;
 			}
-            &:after{
-                transform:scaleX(-1) translate(-240px, -80px);
-            }
+			&:after {
+				transform: scaleX(-1) translate(-240px, -80px);
+			}
 		}
 	}
 </style>
