@@ -3,6 +3,8 @@
 	<div></div>
 	<div></div>
 	<div></div>
+	<div></div>
+	<div></div>
 </div>
 
 <style>
@@ -10,38 +12,61 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: content-box;
-        --red:#B53733;
-        --orange:#EA7457;
+        --blue:#243d83;
+        --sky:#6592cf;
 	}
 	.main {
         height:300px;
         width:400px;
 		display: flex;
 		justify-content: center;
-		align-items: center;
-        background-color:var(--red);
+		align-items: end;
+        overflow:hidden;
+        position: absolute;
+        background:var(--blue);
         &>div{
-            background-color:var(--orange);
-        }
-        &>div:nth-child(1),&>div:nth-child(2){
-            height:100px;
-            width:50px;
-            transform:translate(-150px,100px);
-        }
-        &>div:nth-child(2){
-            transform:translate(-200px,-100px);
-        }
-        &>div:nth-child(3){
             position:absolute;
-            height:250px;
-            width:150px;
-            transform:translate(75px,25px);
+            height:102px;
+            width:80px;
+            &:before{
+                content:'';
+                position:absolute;
+                height:80px;
+                width:80px;
+                border-radius:50%;
+                transform:translate(0px,-48%);
+            }
         }
+        &>div:nth-child(even){
+            background-color:var(--blue);
+            &:before{
+                background-color:var(--blue);
+            }
+        }
+        &>div:nth-child(odd){
+            background-color:var(--sky);
+            &:before{
+                background-color:var(--sky);
+            }
+        } 
+        &>div:nth-child(5){
+            transform:scale(1.5) translateY(17px);
+        }
+
         &>div:nth-child(4){
-            position:absolute;
-            height:100px;
-            width:50px;
-            transform:translate(175px,0px);
+            transform:scale(2) translateY(25px);
+        }
+
+        &>div:nth-child(3){
+            transform:scale(2.5) translateY(29.5px);
+        }
+
+        &>div:nth-child(2){
+            transform:scale(3) translateY(33px);
+        }
+
+        &>div:nth-child(1){
+            transform:scale(3.5) translateY(35px);
         }
 	}
 </style>
