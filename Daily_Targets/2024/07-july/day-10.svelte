@@ -29,7 +29,7 @@
 		width: 400px;
 		display: grid;
 		gap: 140px 20px;
-        background-color:var(--yellow);
+		background-color: var(--yellow);
 		grid-template-columns: repeat(6, 50px);
 		grid-template-rows: 80px 80px;
 		align-items: center;
