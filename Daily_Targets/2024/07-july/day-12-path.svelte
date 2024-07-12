@@ -23,7 +23,7 @@
         &>div{
             height:100px;
             width:250px;
-            clip-path:polygon(0% 0%, 30% 0%, 50% 100%, 70% 0%, 100% 0%, 100% 100%, 0% 100%);
+            clip-path:path("M 0,0 v100 h100 L60,0 Z M 100,100 200,100 200,0 h-60 Z");
             background-color:var(--light);
         }
         &>div:nth-child(1){
@@ -37,3 +37,4 @@
         }
 	}
 </style>
+
