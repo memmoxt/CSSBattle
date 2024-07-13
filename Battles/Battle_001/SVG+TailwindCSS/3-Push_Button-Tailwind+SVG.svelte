@@ -5,7 +5,7 @@
 				<circle cx="50" cy="50" r="10" class=""></circle>
 			</symbol>
 
-            <rect x="0" y="0" width="100" height="50" rx="0" ry="0" class="fill-[var(--blue)]"></rect>
+			<rect x="0" y="0" width="100" height="50" rx="0" ry="0" class="fill-[var(--blue)]"></rect>
 			<use
 				xlink:href="#circle"
 				x="0"
@@ -38,7 +38,7 @@
 		--yellow: #eeb850;
 	}
 	.main {
-        background-color:var(--cyan);
+		background-color: var(--cyan);
 		height: 300px;
 		width: 400px;
 		display: flex;
