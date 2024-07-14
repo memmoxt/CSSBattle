@@ -1,7 +1,6 @@
-
 <script lang="ts">
 	import cssbattle from '$lib/images/today.png';
-    import CSS_Battle from './CSS_Battle.svelte';
+	import CSS_Battle from './CSS_Battle.svelte';
 </script>
 
 <div class="flex flex-col items-center justify-between">
@@ -14,7 +13,7 @@
 		/>
 		<div class="height[300px] width[400px] absolute" style="z-index:-9;">
 			<!-- NOTE: CSSBattle -->
-            <CSS_Battle/>
+			<CSS_Battle />
 		</div>
 	</div>
 	<img src={cssbattle} alt="cssbattle" class="m-4" style="height:300px;width:400px;" />
