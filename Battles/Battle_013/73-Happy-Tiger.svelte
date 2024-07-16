@@ -1,7 +1,7 @@
 <div class="main">
 	<div class="ears"></div>
 	<div class="head">
-        <div class="hair"></div>
+		<div class="hair"></div>
 		<div class="eyes"></div>
 		<div class="mouth"></div>
 	</div>
@@ -16,7 +16,7 @@
 		--beige: #998235;
 		--green: #1a4341;
 		--white: #ffffff;
-        background:var(--yellow);
+		background: var(--yellow);
 	}
 	.main {
 		height: 300px;
@@ -35,23 +35,23 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-            overflow: hidden;
-            &>.hair{
-                position:absolute;
-                height:50px;
-                aspect-ratio:1;
-                background-color:var(--green);
-                transform: rotate(45deg) translate(-60px,-60px);
-            }
-            &>.eyes{
-                position:absolute;
-                height:20px;
-                aspect-ratio:1;
-                border-radius:50%;
-                transform:translate(40px, -5px);
-                background-color:var(--green);
-                box-shadow:-80px 0 0 0px var(--green);
-            }
+			overflow: hidden;
+			& > .hair {
+				position: absolute;
+				height: 50px;
+				aspect-ratio: 1;
+				background-color: var(--green);
+				transform: rotate(45deg) translate(-60px, -60px);
+			}
+			& > .eyes {
+				position: absolute;
+				height: 20px;
+				aspect-ratio: 1;
+				border-radius: 50%;
+				transform: translate(40px, -5px);
+				background-color: var(--green);
+				box-shadow: -80px 0 0 0px var(--green);
+			}
 			& > .mouth {
 				z-index: 3;
 				height: 40px;
