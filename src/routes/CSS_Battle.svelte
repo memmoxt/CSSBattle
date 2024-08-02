@@ -1,6 +1,5 @@
 <div class="main">
 	<div></div>
-	<div></div>
 </div>
 
 <style>
@@ -8,9 +7,9 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: content-box;
-        --purple:#301e53;
-        --violet:#766d94;
-        background-color:var(--purple);
+		--green: #49c85b;
+		--darkgreen: #1f7d3b;
+        background-color:var(--green);
 	}
 	.main {
 		height: 300px;
@@ -18,23 +17,16 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-        &>div:nth-child(1), &>div:nth-child(2){
-            background-color:var(--violet);
-            opacity:0.7;
+        &>div{
             height:100px;
             aspect-ratio:1;
-            transform:translate(-50%,-50%);
-            &:before{
-                content:'';
-                position:absolute;
-                height:50px;
-                aspect-ratio:1;
-                background-color:var(--purple);
-                transform:translate(100%,100%);
-            }
-        }
-        &>div:nth-child(2){
-            transform:translate(50%,50%) scale(-1);
+            background-color:var(--darkgreen);
+            border-radius:50%;
+            transform:translate(150px,0px);
+            box-shadow: -50px 0px 0px 10px var(--darkgreen),
+                -110px 0px 0px 20px var(--darkgreen),
+                -180px 0px 0px 30px var(--darkgreen),
+                -260px 0px 0px 40px var(--darkgreen);
         }
 	}
 </style>
