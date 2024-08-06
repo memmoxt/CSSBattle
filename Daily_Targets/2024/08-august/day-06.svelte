@@ -17,7 +17,7 @@
 		--green: #49c85b;
 		--white: #ffffff;
 		--brown: #30230a;
-        /* background-color:var(--green); */
+		background-color: var(--green);
 	}
 	.main {
 		height: 300px;
@@ -27,7 +27,7 @@
 		align-items: center;
 		& > div:nth-child(1),
 		& > div:nth-child(2) {
-			opacity:0.5;
+			/* opacity:0.5; */
 			position: absolute;
 			border-radius: 50%;
 			height: 80px;
@@ -48,7 +48,6 @@
 				content: '';
 				position: absolute;
 				background-color: var(--green);
-            background-color:red;
 				border-radius: 50%;
 				height: 36px;
 				aspect-ratio: 1;
@@ -68,13 +67,13 @@
 			display: grid;
 			justify-content: center;
 			align-items: end;
-            grid-template-columns: repeat(4, 1fr);
-            gap:40px;
-            &>div{
-                height:36px;
-                width:60px;
-                background-color:var(--white);
-            }
+			grid-template-columns: repeat(4, 1fr);
+			gap: 40px;
+			& > div {
+				height: 36px;
+				width: 60px;
+				background-color: var(--white);
+			}
 		}
 	}
 </style>
