@@ -11,7 +11,7 @@
 		box-sizing: border-box;
 		--white: #eadcdc;
 		--blue: #3166ae;
-        background-color:var(--white);
+		background-color: var(--white);
 	}
 	.main {
 		height: 300px;
@@ -22,10 +22,10 @@
 		& > div {
 			height: 140px;
 			aspect-ratio: 1;
-			background-color:var(--blue);
+			background-color: var(--blue);
 			border-radius: 50%;
 			overflow: hidden;
-            
+
 			&:before {
 				content: '';
 				position: absolute;
@@ -55,3 +55,4 @@
 		}
 	}
 </style>
+
