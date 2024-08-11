@@ -16,7 +16,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-        background-color:var(--yellow);
+		background-color: var(--yellow);
 		& > div {
 			height: 100px;
 			aspect-ratio: 1;
@@ -30,22 +30,22 @@
 			border-radius: 50%;
 			background-color: var(--yellow);
 			transform: translate(-50%, -50%);
-            opacity:100%;
+			opacity: 100%;
 			box-shadow:
 				100px 0 0 0 var(--yellow),
 				0px 100px 0 0 var(--yellow),
 				100px 100px 0 0 var(--yellow);
 		}
-        &:after{
-            content:'';
-            position:absolute;
-            height:60px;
-            aspect-ratio:1;
-            background-color:var(--orange);
-            opacity:100%;
-            border-radius:50%;
-            transform:translate(-50px ,-50px);
-            box-shadow:100px 100px 0 0 var(--orange);
-        }
+		&:after {
+			content: '';
+			position: absolute;
+			height: 60px;
+			aspect-ratio: 1;
+			background-color: var(--orange);
+			opacity: 100%;
+			border-radius: 50%;
+			transform: translate(-50px, -50px);
+			box-shadow: 100px 100px 0 0 var(--orange);
+		}
 	}
 </style>
