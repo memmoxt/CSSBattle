@@ -7,9 +7,9 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
-        --green:#4a9a86;
-        --yellow:#fae29e;
-        background-color:var(--green);
+        --pink:#d96e9f;
+        --purple:#6255aa;
+        background-color:var(--purple);
 	}
 	.main {
 		height: 300px;
@@ -17,28 +17,25 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-       &>div{
-            transform:translate(10px,5px);
-            height:160px;
-            width:80px;
-            background-color:var(--yellow);
-            &:before{
+        &>div{
+            height:220px;
+            width:150px;
+            background-color:var(--pink);
+            &:before,&:after{
                 content:'';
                 position:absolute;
-                background-color:var(--yellow);
-                height:80px;
-                width:40px;
-                transform:translate(-40px,0px);
+                background-color:var(--purple);
+            }
+            &:before{
+                height:160px;
+                width:60px;
+                transform:translate(30px,30px);
             }
             &:after{
-                content:'';
-                position:absolute;
-                background-color:var(--green);
-                border-radius:50%;
-                height:80px;
-                aspect-ratio:1;
-                transform:translate(-100%,-50%);
+                height:60px;
+                width:30px;
+                transform:translate(90px,130px);
             }
-        } 
+        }
 	}
 </style>
