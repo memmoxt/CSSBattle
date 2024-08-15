@@ -12,7 +12,7 @@
 		box-sizing: border-box;
 		--yellow: #f5bb60;
 		--blue: #2f5a76;
-        background-color:var(--blue);
+		background-color: var(--blue);
 	}
 	.main {
 		height: 300px;
@@ -38,13 +38,11 @@
 			}
 		}
 		& > div:nth-child(2) {
-			height: 86px;
+			height: 85px;
 			width: 30px;
 			background-color: var(--yellow);
 			position: absolute;
-			transform: translate(0px, 6px) rotate(-39.5deg);
-            /* background-color:black; */
-            /* opacity:50%; */
+			transform: translate(-0px, 6px) rotate(-40deg);
 		}
 		& > div:nth-child(3) {
 			transform: translate(-8px, 59px) rotate(137deg);
@@ -56,7 +54,7 @@
 			background-color: var(--yellow);
 			border-radius: 50%;
 			transform: translate(32px, -80px);
-            box-shadow:-71px 164px 0 var(--yellow);
+			box-shadow: -71px 164px 0 var(--yellow);
 		}
 	}
 </style>
