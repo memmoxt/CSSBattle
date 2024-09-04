@@ -10,6 +10,7 @@
 		box-sizing: border-box;
 		--light: #f3ac3c;
 		--dark: #998235;
+        background-color:var(--light);
 	}
 	.main {
 		height: 300px;
@@ -22,7 +23,7 @@
 			transform: translateY(3px);
 			height: 18px;
 			width: 80px;
-			background-color: black;
+			background-color: var(--dark);
 		}
 		& > div:nth-child(2) {
 			height: 86px;
@@ -50,3 +51,4 @@
 		}
 	}
 </style>
+
