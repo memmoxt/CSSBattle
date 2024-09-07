@@ -9,7 +9,7 @@
 		box-sizing: border-box;
 		--red: #de817e;
 		--green: #217e81;
-        background-color:var(--red);
+		background-color: var(--red);
 	}
 	.main {
 		height: 300px;
