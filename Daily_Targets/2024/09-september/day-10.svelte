@@ -21,7 +21,7 @@
 
 		& > div:nth-child(1) {
 			height: 180px;
-			width: 25px;
+			width: 25.4px;
 			background-color: var(--white);
 			transform: translateX(-112px);
 			box-shadow:
@@ -36,8 +36,9 @@
 			position: absolute;
 			top: 215px;
 			box-shadow:
-				-75px -155px 0 var(--white),
-				75px -155px 0 var(--white);
+				-74.9px -155px 0 var(--white),
+				74.9px -155px 0 var(--white);
 		}
 	}
 </style>
+
