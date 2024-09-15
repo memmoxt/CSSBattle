@@ -17,7 +17,6 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-        
 		& > div {
 			height: 60px;
 			aspect-ratio: 1;
@@ -34,3 +33,4 @@
 		}
 	}
 </style>
+
