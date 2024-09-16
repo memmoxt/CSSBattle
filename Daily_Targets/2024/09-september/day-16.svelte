@@ -27,12 +27,13 @@
 			justify-content: center;
 			align-items: center;
 			& > div {
-				transform: translateX(10px);
+				transform: translateX(8px);
 				border-top: 30px solid var(--red);
 				border-right: 0px solid var(--red);
 				border-bottom: 30px solid var(--red);
-				border-left: 55px solid var(--white);
+				border-left: 50.0px solid var(--white);
 			}
 		}
 	}
 </style>
+
