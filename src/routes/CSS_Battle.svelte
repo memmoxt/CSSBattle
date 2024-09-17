@@ -1,5 +1,5 @@
 <div class="main">
-	<div><div></div></div>
+	<div></div>
 </div>
 
 <style>
@@ -7,10 +7,10 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
-		--red: #ea333d;
-		--black: #191919;
-		--white: #ffffff;
-        background-color:var(--black);
+		--white: #fcebeb;
+		--orange: #ea9a52;
+		--blue: #515697;
+		background-color: var(--orange);
 	}
 	.main {
 		height: 300px;
@@ -19,19 +19,25 @@
 		justify-content: center;
 		align-items: center;
 		& > div {
-			height: 140px;
-			width: 200px;
-			background-color: var(--red);
-			border-radius: 40px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			& > div {
-				transform: translateX(10px);
-				border-top: 30px solid var(--red);
-				border-right: 0px solid var(--red);
-				border-bottom: 30px solid var(--red);
-				border-left: 55px solid var(--white);
+			height: 100px;
+			width: 400px;
+			background-color: var(--blue);
+			&:before {
+				content: '';
+				position: absolute;
+				height: 100px;
+				aspect-ratio: 1;
+				background-color: var(--white);
+				border-radius: 50%;
+				transform: translate(150%, -100%);
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				height: 100px;
+				aspect-ratio: 1;
+				transform: translate(150%, 100%);
+				background-color: var(--blue);
 			}
 		}
 	}
