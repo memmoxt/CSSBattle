@@ -1,6 +1,6 @@
 <div class="main">
 	<div></div>
-    <div></div>
+	<div></div>
 </div>
 
 <style>
@@ -10,7 +10,7 @@
 		box-sizing: border-box;
 		--green: #2f5a76;
 		--yellow: #f5bb60;
-        background-color:var(--green);
+		background-color: var(--green);
 	}
 	.main {
 		height: 300px;
@@ -19,14 +19,14 @@
 		justify-content: center;
 		align-items: center;
 		& > div {
-            position:absolute;
+			position: absolute;
 			height: 300px;
 			width: 400px;
 			background-color: var(--yellow);
 			clip-path: polygon(0 0, 20px 0, 400px 219px, 400px 300px, 380px 300px, 0px 80.5px);
 		}
-        &>div:nth-child(2){
-            transform:scaleX(-1);
-        }
+		& > div:nth-child(2) {
+			transform: scaleX(-1);
+		}
 	}
 </style>
