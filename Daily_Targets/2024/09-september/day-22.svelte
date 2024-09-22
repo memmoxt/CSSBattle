@@ -22,9 +22,9 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-        background-color:var(--red);
+		background-color: var(--red);
 		& > div {
-            overflow: hidden;
+			overflow: hidden;
 			position: absolute;
 			height: 160px;
 			width: 120px;
