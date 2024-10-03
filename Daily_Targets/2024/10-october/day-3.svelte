@@ -1,7 +1,7 @@
 <div class="main">
 	<div><div></div></div>
 	<div></div>
-    <div></div>
+	<div></div>
 </div>
 
 <style>
@@ -13,7 +13,7 @@
 		--purple: #594c94;
 	}
 	.main {
-        background-color:var(--yellow);
+		background-color: var(--yellow);
 		height: 300px;
 		width: 400px;
 		display: flex;
@@ -29,7 +29,7 @@
 			transform: translateY(0px);
 			overflow: hidden;
 			position: absolute;
-            z-index: 2;
+			z-index: 2;
 			& > div {
 				height: 80px;
 				width: 260px;
@@ -45,14 +45,14 @@
 			background-color: var(--purple);
 			position: absolute;
 			transform: translateY(-30px);
-            z-index:1;
+			z-index: 1;
 		}
-        &> div:nth-child(3){
-            height:200px;
-            width:80px;
-            transform:translateY(50px);
-            background-color:var(--purple);
-            z-index:3;
-        }
+		& > div:nth-child(3) {
+			height: 200px;
+			width: 80px;
+			transform: translateY(50px);
+			background-color: var(--purple);
+			z-index: 3;
+		}
 	}
 </style>
