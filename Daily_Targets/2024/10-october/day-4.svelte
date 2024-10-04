@@ -2,8 +2,7 @@
 	<div></div>
 	<div></div>
 	<div></div>
-    <div></div>
-
+	<div></div>
 </div>
 
 <style>
@@ -14,7 +13,7 @@
 		--white: #e6e9e3;
 		--green: #61a74e;
 		--darkgreen: #33572b;
-        background-color:var(--white);
+		background-color: var(--white);
 	}
 	.main {
 		height: 300px;
@@ -51,7 +50,7 @@
 			aspect-ratio: 1;
 			background-color: var(--white);
 			clip-path: polygon(106px 158px, 133px 158px, 174px 250px, 66px 250px);
-            z-index: 2;
+			z-index: 2;
 		}
 		& > div:nth-child(3) {
 			position: absolute;
@@ -59,19 +58,19 @@
 			height: 240px;
 			aspect-ratio: 1;
 			background-color: var(--darkgreen);
-            border-radius:50%;
+			border-radius: 50%;
 			clip-path: polygon(101px 150px, 138px 150px, 187px 250px, 55px 250px);
-            z-index:1;
+			z-index: 1;
 		}
-        &>div:nth-child(4){
-				position: absolute;
-				height: 90px;
-				aspect-ratio: 1;
-				background-color: var(--white);
-				border-radius: 50%;
-				top: 109px;
-				left: 155px;
-            z-index:4;
-        }
+		& > div:nth-child(4) {
+			position: absolute;
+			height: 90px;
+			aspect-ratio: 1;
+			background-color: var(--white);
+			border-radius: 50%;
+			top: 109px;
+			left: 155px;
+			z-index: 4;
+		}
 	}
 </style>
