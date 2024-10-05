@@ -32,22 +32,23 @@
 		}
 		& > div:nth-child(2) {
 			position: absolute;
-			height: 125px;
-			transform: translateY(53px) rotate(45deg);
+			height: 120px;
+			transform: translateY(58px) rotate(45deg);
 			aspect-ratio: 1;
 			background-color: var(--green);
-			border-radius: 42px;
+			border-radius: 45px;
 		}
         &>div:nth-child(3),&>div:nth-child(4){
             position:absolute;
             height:60px;
             width:40px;
             border-radius:50%;
-            transform:translateX(-50px) translateY(29px) rotate(-48deg);
+            transform:translateX(-50px) translateY(29px) rotate(-50deg);
             background-color:var(--black);
         }
         &>div:nth-child(4){
-            transform:translateX(50px) translateY(29px) rotate(48deg);
+            transform:translateX(50px) translateY(29px) rotate(50deg);
         }
 	}
 </style>
+
