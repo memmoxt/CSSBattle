@@ -22,7 +22,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-        background-color:var(--green);
+		background-color: var(--green);
 		& > div {
 			background-color: var(--brown);
 			height: 200px;
@@ -53,3 +53,4 @@
 		}
 	}
 </style>
+
