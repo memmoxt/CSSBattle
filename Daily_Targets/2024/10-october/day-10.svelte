@@ -29,7 +29,7 @@
 			aspect-ratio: 1;
 			background-color: var(--orange);
 			border-radius: 50%;
-			transform: translate(-65.5px, -78px);
+			transform: translate(-65px, -78px);
             opacity: 0.5;
 		}
 		& > div:nth-child(even) {
@@ -53,3 +53,4 @@
 		}
 	}
 </style>
+
