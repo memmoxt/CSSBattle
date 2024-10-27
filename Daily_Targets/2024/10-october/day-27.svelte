@@ -16,7 +16,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-        background-color:var(--black);
+		background-color: var(--black);
 		& > div {
 			height: 140px;
 			aspect-ratio: 1;
@@ -43,3 +43,4 @@
 		}
 	}
 </style>
+
