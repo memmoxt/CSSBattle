@@ -7,8 +7,9 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
-		--green: #63a3a0;
-		--white: #f3ead2;
+		--red: #984842;
+		--white: #ecd5e4;
+		background-color: var(--white);
 	}
 	.main {
 		height: 300px;
@@ -16,30 +17,22 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-color: var(--green);
 		& > div {
-			position: absolute;
-			height: 100px;
-			width: 120px;
-			background-color: var(--white);
-			border-radius: 50%;
-			top: 45px;
+			height: 90px;
+			width: 180px;
+			background-color: var(--red);
 			&:before {
-				position: absolute;
 				content: '';
-				left: 10px;
-				top: 90px;
-				height: 120px;
-				width: 100px;
-				background-color: var(--white);
-			}
-			&:after {
 				position: absolute;
-				content: '';
-				bottom: -110px;
-				height: 20px;
-				width: 120px;
-				background-color: var(--white);
+				background-color: var(--red);
+				top: 0;
+				left: 0;
+				height: 30px;
+				width: 60px;
+				box-shadow:
+					340px 0 0 0 var(--red),
+					340px 270px 0 var(--red),
+					0px 270px 0 var(--red);
 			}
 		}
 	}
