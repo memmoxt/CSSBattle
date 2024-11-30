@@ -12,7 +12,7 @@
 		--darkred: #8f3f4a;
 		--red: #d96c7b;
 		--white: #f3ead2;
-        /* background-color:var(--white); */
+        background-color:var(--white);
 	}
 	.main {
 		height: 300px;
@@ -48,3 +48,4 @@
 		}
 	}
 </style>
+
