@@ -10,7 +10,7 @@
 		box-sizing: border-box;
 		--blue: #4f77ff;
 		--white: #e0e7ff;
-        background-color:var(--white);
+		background-color: var(--white);
 	}
 
 	.main {
@@ -53,27 +53,28 @@
 			height: 180px;
 			aspect-ratio: 1;
 			background-color: var(--blue);
-			opacity:1;
+			opacity: 1;
 			border-radius: 50%;
-            &:before,&:after{
-                position:absolute;
-                content:'';
-            }
-            &:before{
-                height:100px;
-                aspect-ratio:1;
-                border-radius:50%;
-                top:40px;
-                left:40px;
-                background-color:var(--white);
-            }
-            &:after{
-                height:40px;
-                width:50px;
-                background-color:var(--white);
-                top:70px;
-                left:133px;
-            }
+			&:before,
+			&:after {
+				position: absolute;
+				content: '';
+			}
+			&:before {
+				height: 100px;
+				aspect-ratio: 1;
+				border-radius: 50%;
+				top: 40px;
+				left: 40px;
+				background-color: var(--white);
+			}
+			&:after {
+				height: 40px;
+				width: 50px;
+				background-color: var(--white);
+				top: 70px;
+				left: 133px;
+			}
 		}
 	}
 </style>
