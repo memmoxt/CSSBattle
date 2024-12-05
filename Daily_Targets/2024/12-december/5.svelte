@@ -12,6 +12,7 @@
 		--yellow: #f2eaa8;
 		--purple: #7e6293;
 		--red: #de6b67;
+        background-color:var(--yellow);
 	}
 
 	.main {
@@ -24,8 +25,6 @@
 		position: absolute;
 		& > div {
 			position: absolute;
-			height: 50px;
-			opacity: 0.5;
 			aspect-ratio: 1;
 			background-color: red;
 			border-radius: 50%;
@@ -40,13 +39,14 @@
 		& > div:nth-child(1) {
 			right: 25px;
 		}
-        &>div:nth-child(2){
-            right:100px;
-            transform:scale(-2);
-        }
-        &>div:nth-child(3){
-            right:250px;
-            transform:scale(4);
-        }
+		& > div:nth-child(2) {
+			right: 100px;
+			transform: scale(-2);
+		}
+		& > div:nth-child(3) {
+			right: 250px;
+			transform: scale(4);
+		}
 	}
 </style>
+
