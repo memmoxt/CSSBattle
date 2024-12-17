@@ -9,7 +9,7 @@
 		box-sizing: border-box;
 		--green: #588a95;
 		--white: #ffffff;
-		background-color: var(--green);
+        background-color:var(--green);
 	}
 
 	.main {
@@ -44,3 +44,4 @@
 		}
 	}
 </style>
+
