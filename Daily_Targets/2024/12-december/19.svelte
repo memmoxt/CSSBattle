@@ -15,7 +15,7 @@
 		box-sizing: border-box;
 		--black: #35312f;
 		--pink: #cf81af;
-        background-color:var(--black);
+		background-color: var(--black);
 	}
 
 	.main {
@@ -38,26 +38,26 @@
 				aspect-ratio: 1;
 				background-color: var(--pink);
 			}
-            &>div:nth-child(1){
-                grid-row:3/4;
-                grid-column:2/3;
-            }
-            &>div:nth-child(2){
-                grid-row:2/3;
-                grid-column:3/4;
-            }
-            &>div:nth-child(3){
-                grid-row:2/3;
-                grid-column:2/3;
-            }
-            &>div:nth-child(4){
-                grid-row:2/3;
-                grid-column:1/2;
-            }
-            &>div:nth-child(5){
-                grid-row:1/2;
-                grid-column:2/3;
-            }
+			& > div:nth-child(1) {
+				grid-row: 3/4;
+				grid-column: 2/3;
+			}
+			& > div:nth-child(2) {
+				grid-row: 2/3;
+				grid-column: 3/4;
+			}
+			& > div:nth-child(3) {
+				grid-row: 2/3;
+				grid-column: 2/3;
+			}
+			& > div:nth-child(4) {
+				grid-row: 2/3;
+				grid-column: 1/2;
+			}
+			& > div:nth-child(5) {
+				grid-row: 1/2;
+				grid-column: 2/3;
+			}
 		}
 	}
 </style>
