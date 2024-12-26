@@ -54,8 +54,8 @@
 			}
 			& > div:nth-child(5) {
 				grid-row: 2/-1;
-			}
-			& > div:nth-child(6) {
+            }
+            & > div:nth-child(6) {
 				grid-row: 3/-1;
 			}
 			& > div:nth-child(7) {
