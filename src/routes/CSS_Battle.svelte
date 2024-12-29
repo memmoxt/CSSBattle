@@ -1,7 +1,5 @@
 <div class="main">
 	<div></div>
-	<div></div>
-	<div></div>
 </div>
 
 <style>
@@ -9,11 +7,10 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
-		--grey: #3f4869;
-		--orange: #ea9a52;
-		--red: #aa3440;
-		--green: #61a74e;
-        background-color:var(--grey);
+		--green: #7c9a81;
+		--yellow: #fff9c6;
+		--orange: #efcb5c;
+        background-color:var(--green);
 	}
 
 	.main {
@@ -24,29 +21,22 @@
 		align-items: center;
 		overflow: hidden;
 		position: absolute;
-		& > div:nth-child(1),
-		div:nth-child(2) {
-			position: absolute;
-			height: 60px;
-			width: 180px;
-			border-top-left-radius: 20px;
-			border-top-right-radius: 20px;
-			border-bottom-right-radius: 20px;
-		}
-		& > div:nth-child(1) {
-			top: 60px;
-			background-color: var(--orange);
-		}
-		& > div:nth-child(2) {
-			bottom: 60px;
-			transform: scaleY(-1);
-			background-color: var(--red);
-		}
-		& > div:nth-child(3) {
-			height: 60px;
-			aspect-ratio: 1;
-			transform: translateX(-60px);
-			background-color: var(--green);
+		& > div {
+			height: 90px;
+			width: 270px;
+			border-radius: 50px/50px;
+			background-color: var(--yellow);
+            &:before{
+                position:absolute;
+                content:'';
+                height:70px;
+                aspect-ratio:1;
+                background-color:var(--orange);
+                border-radius:50%;
+                top:115px;
+                right:95px;
+                box-shadow:0 0 0 30px var(--green);
+            }
 		}
 	}
 </style>
