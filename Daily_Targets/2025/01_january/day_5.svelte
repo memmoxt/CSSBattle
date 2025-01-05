@@ -19,7 +19,7 @@
 		position: absolute;
 		--green: #b8f4a6;
 		--dark: #3ba44d;
-        background-color:var(--green);
+		background-color: var(--green);
 		& > div {
 			height: 200px;
 			aspect-ratio: 1;
@@ -40,3 +40,4 @@
 		}
 	}
 </style>
+
