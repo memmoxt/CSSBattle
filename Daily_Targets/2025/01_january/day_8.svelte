@@ -21,7 +21,7 @@
 		gap: 20px;
 		--red: #d95362;
 		--blue: #2d3464;
-        background-color:var(--red);
+		background-color: var(--red);
 		& > div {
 			height: 220px;
 			aspect-ratio: 1;
@@ -46,3 +46,4 @@
 		}
 	}
 </style>
+
