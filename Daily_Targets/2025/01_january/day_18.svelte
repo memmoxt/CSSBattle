@@ -57,8 +57,9 @@
 				background-color: var(--white);
 			}
 		}
-        &>div:nth-child(2){
-            left:200px;
-        }
+		& > div:nth-child(2) {
+			left: 200px;
+		}
 	}
 </style>
+
