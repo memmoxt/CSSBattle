@@ -21,7 +21,7 @@
 		gap: 20px;
 		--blue: #328fc1;
 		--yellow: #fade8b;
-        background-color:var(--blue);
+		background-color: var(--blue);
 		& > div {
 			height: 140px;
 			aspect-ratio: 1;
@@ -44,3 +44,4 @@
 		}
 	}
 </style>
+
