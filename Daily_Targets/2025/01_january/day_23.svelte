@@ -21,7 +21,7 @@
 		gap: 20px;
 		--light_blue: #a1e6e4;
 		--dark_blue: #2f5a76;
-		background-color: var(--light_blue);
+        background-color:var(--light_blue);
 		& > div {
 			height: 200px;
 			width: 300px;
@@ -51,3 +51,4 @@
 		}
 	}
 </style>
+
