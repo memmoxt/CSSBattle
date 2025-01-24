@@ -22,7 +22,7 @@
 		--white: #e0e7ff;
 		--blue: #2d3464;
 		--light_blue: #328fc1;
-        background-color:var(--white);
+		background-color: var(--white);
 		& > div:nth-child(1) {
 			position: absolute;
 			height: 184px;
@@ -48,3 +48,4 @@
 		}
 	}
 </style>
+
