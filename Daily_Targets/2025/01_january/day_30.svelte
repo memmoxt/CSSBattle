@@ -25,7 +25,7 @@
 		position: absolute;
 		--green: #5aed9c;
 		--purple: #4b4d88;
-        background-color:var(--green);
+		background-color: var(--green);
 		& > div:nth-child(1) {
 			height: 100px;
 			aspect-ratio: 1;
@@ -36,7 +36,7 @@
 		& > div:nth-child(3),
 		& > div:nth-child(4),
 		& > div:nth-child(5),
-        &> div:nth-child(6){
+		& > div:nth-child(6) {
 			position: absolute;
 			content: '';
 			height: 30px;
@@ -52,12 +52,12 @@
 		& > div:nth-child(4) {
 			transform: translate(96px, -96px) rotate(90deg);
 		}
-        &>div:nth-child(5){
-            transform: translate(164px, -68px) rotate(-45deg);
-        }
-        &>div:nth-child(6){
-            transform: translate(192px, 0px) ;
-        }
-
+		& > div:nth-child(5) {
+			transform: translate(164px, -68px) rotate(-45deg);
+		}
+		& > div:nth-child(6) {
+			transform: translate(192px, 0px);
+		}
 	}
 </style>
+
