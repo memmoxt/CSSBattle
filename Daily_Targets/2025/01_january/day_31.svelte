@@ -1,3 +1,4 @@
+
 <div class="main">
 	<div></div>
 </div>
@@ -18,7 +19,7 @@
 		justify-content: center;
 		align-items: center;
 		position: absolute;
-        background-color:var(--blue);
+		background-color: var(--blue);
 		& > div {
 			height: 140px;
 			width: 200px;
