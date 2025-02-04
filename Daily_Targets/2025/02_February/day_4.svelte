@@ -10,7 +10,7 @@
 		box-sizing: content-box;
 		--white: #ffffff;
 		--purple: #4b4d88;
-        background-color:var(--white);
+		background-color: var(--white);
 	}
 
 	.main {
