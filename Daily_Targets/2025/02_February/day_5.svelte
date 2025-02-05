@@ -53,6 +53,17 @@
 		& > div:nth-child(2) {
 			transform: scale(-1);
 			left: 220px;
+			top: 70px;
+			clip-path: polygon(
+				-20px -50px,
+				200px -50px,
+				200px 60px,
+				10px 60px,
+				0px 80px,
+				0px 300px,
+				-20px 300px
+			);
 		}
 	}
 </style>
+
