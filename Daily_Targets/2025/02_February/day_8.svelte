@@ -9,7 +9,7 @@
 		box-sizing: content-box;
 		--yellow: #edecc1;
 		--red: #cc5252;
-        background-color:var(--yellow);
+		background-color: var(--yellow);
 	}
 	.main {
 		height: 300px;
