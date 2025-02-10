@@ -10,8 +10,8 @@
 		padding: 0;
 		box-sizing: content-box;
 		--blue: #328fc1;
-        --white:#ffffff;
-        background-color:var(--white);
+		--white: #ffffff;
+		background-color: var(--white);
 	}
 	.main {
 		height: 300px;
@@ -20,7 +20,7 @@
 		justify-content: center;
 		align-items: center;
 		position: absolute;
-        overflow:hidden;
+		overflow: hidden;
 		& > div:nth-child(1),
 		& > div:nth-child(2) {
 			transform: translateX(-95px);
@@ -45,7 +45,7 @@
 			position: absolute;
 			height: 50px;
 			aspect-ratio: 1;
-            border-radius:50%;
+			border-radius: 50%;
 			background-color: var(--blue);
 		}
 	}
