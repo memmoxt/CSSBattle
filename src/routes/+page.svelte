@@ -16,5 +16,5 @@
 			<CSS_Battle />
 		</div>
 	</div>
-	<img src={cssbattle} alt="cssbattle" class="m-4" style="height:300px;width:400px;" />
+	<img src={cssbattle} alt="cssbattle" class=" m-4" style="height:300px;width:400px;" />
 </div>
