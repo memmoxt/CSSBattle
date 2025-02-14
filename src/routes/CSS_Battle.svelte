@@ -8,9 +8,9 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: content-box;
-		--green: #183539;
-		--blue: #00b0c8;
-        background-color:var(--blue);
+		--red: #963032;
+		--green: #75cf34;
+		background-color: var(--green);
 	}
 	.main {
 		height: 300px;
@@ -20,23 +20,24 @@
 		align-items: center;
 		position: absolute;
 		overflow: hidden;
+
 		& > div {
-			height: 240px;
+			height: 40px;
 			width: 120px;
-			background-color: var(--green);
-			/* opacity: 0.5; */
-			transform: translate(-50px);
-            &:before{
-                content:'';
-                position:absolute;
-                height:120px;
-                width:40px;
-                background-color:var(--green);
-                transform:translate(120px, 60px);
-            }
+			background-color: var(--red);
+			transform: translate(60px, -30px);
+			&:before {
+				content: '';
+				position: absolute;
+				height: 25px;
+				width: 40px;
+				transform: translate(10px, -20px);
+				background-color: var(--red);
+				box-shadow: 60px 0 var(--red);
+			}
 		}
-        &>div:nth-child(2){
-            transform: translate(50px) scale(-1);
-        }
+		& > div:nth-child(2) {
+			transform: translate(-60px, 30px) scale(-1);
+		}
 	}
 </style>
