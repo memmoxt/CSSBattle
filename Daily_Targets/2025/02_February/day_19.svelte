@@ -9,8 +9,7 @@
 		box-sizing: content-box;
 		--red: #d95362;
 		--white: #fdffe9;
-        background-color:var(--red);
-
+		background-color: var(--red);
 	}
 	.main {
 		height: 300px;
@@ -27,17 +26,19 @@
 			background-color: var(--white);
 			/* opacity: 0.5; */
 			position: absolute;
-            left:125px;
-            &::before{
-                content:'';
-                position:absolute;
-                height:50px;
-                aspect-ratio:1;
-                background-color:var(--white);
-                border-radius:50%;
-                left:100px;
-                box-shadow: 0 85px var(--white), 0 170px var(--white);
-            }
+			left: 125px;
+			&::before {
+				content: '';
+				position: absolute;
+				height: 50px;
+				aspect-ratio: 1;
+				background-color: var(--white);
+				border-radius: 50%;
+				left: 100px;
+				box-shadow:
+					0 85px var(--white),
+					0 170px var(--white);
+			}
 		}
 	}
 </style>
