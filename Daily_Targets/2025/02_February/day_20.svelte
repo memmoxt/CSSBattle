@@ -27,7 +27,6 @@
 			width: 240px;
 			top: 200px;
 			background-color: var(--darkyellow);
-			/* opacity: 0.5; */
 			&::before {
 				content: '';
 				position: absolute;
