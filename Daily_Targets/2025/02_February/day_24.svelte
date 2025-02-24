@@ -37,7 +37,7 @@
 				left: 70px;
 				height: 100px;
 				aspect-ratio: 1;
-				background-color: var(--white);
+				background-color: white;
 				border-radius: 50%;
 			}
 			&::after {
