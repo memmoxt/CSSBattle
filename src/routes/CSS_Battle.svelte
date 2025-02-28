@@ -1,5 +1,9 @@
 <div class="main">
-	<div></div>
+	<div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
 </div>
 
 <style>
@@ -7,9 +11,9 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: content-box;
-		--dark: #183539;
-		--light: #46ba67;
-        background-color:var(--dark)
+		--yellow: #ebe77e;
+		--red: #de817e;
+        background-color:var(--yellow);
 	}
 	.main {
 		height: 300px;
@@ -22,30 +26,27 @@
 		overflow: hidden;
 		column-gap: 60px;
 		& > div {
-			position: absolute;
-			height: 250px;
-			aspect-ratio: 1;
-			background-color: var(--dark);
-			box-shadow: 0 0 0 30px var(--light);
-			border-radius: 50%;
-			top: -204px;
-			&:before {
-				content: '';
-				position: absolute;
-				background-color: var(--light);
-				left: 74px;
-				top: 204px;
-				height: 300px;
-				width: 101px;
+			display: grid;
+			height: 240px;
+			width: 240px;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(3, 1fr);
+			& > div {
+				height: 80px;
+				width: 80px;
+				background-color: var(--red);
+				clip-path: polygon(0 0, 30px 0px, 30px 50px, 80px 50px, 80px 80px, 0px 80px);
 			}
-			&:after{
-                position: absolute;
-				content:'';
-                background-color:var(--light);
-                top:300px;
-                left:-1px;
-                height:30px;
-                width:266px;
+			& > div:nth-child(1) {
+				grid-row: 1;
+			}
+			& > div:nth-child(2) {
+				grid-row: 2;
+				grid-column: 2;
+			}
+			& > div:nth-child(3) {
+				grid-row: 3;
+				grid-column: 3;
 			}
 		}
 	}
