@@ -23,7 +23,7 @@
 		/* overflow: hidden; */
 		& > div:nth-child(1) {
 			position: absolute;
-			height: 170px;
+			height: 168px;
 			border-radius: 50%;
 			aspect-ratio: 1;
 			background-color: var(--green);
@@ -32,21 +32,21 @@
 				content: '';
 				position: absolute;
 				border-top: 150px solid transparent;
-				border-right: 104px solid transparent;
+				border-right: 0px solid transparent;
 				border-bottom: 150px solid transparent;
-				border-left: 118px solid var(--green);
+				border-left: 116px solid var(--green);
 				top: -65px;
-				left: -115px;
+				left: -116px;
 			}
 			&:after {
 				content: '';
 				position: absolute;
 				border-top: 150px solid transparent;
-				border-right: 104px solid transparent;
+				border-right: 103px solid transparent;
 				border-bottom: 150px solid transparent;
-				border-left: 118px solid var(--green);
+				border-left: 116px solid var(--green);
 				top: -65px;
-				left: -115px;
+				left: -114px;
 				transform: translate(180px) scale(-1);
 			}
 		}
@@ -58,3 +58,4 @@
         }
 	}
 </style>
+
