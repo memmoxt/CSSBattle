@@ -24,19 +24,19 @@
 		& > div {
 			position: absolute;
 			height: 300px;
-			width: 119px;
+			width: 120px;
 			background-color: var(--black);
 			/* opacity: 0.5; */
 			transform: translate(-60px);
 			clip-path: polygon(
 				0 0,
 				40px 0px,
-				119px 79px,
-				40px 159px,
+				120px 80px,
+				40px 160px,
 				40px 300px,
 				0 300px,
-				0 159px,
-				79px 80px
+				0 160px,
+				80px 80px
 			);
 		}
 		& > div:nth-child(2) {
@@ -44,3 +44,4 @@
 		}
 	}
 </style>
+
