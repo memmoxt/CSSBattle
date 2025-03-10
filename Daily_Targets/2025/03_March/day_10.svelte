@@ -26,19 +26,20 @@
 			width: 400px;
 			background-color: var(--white);
 			clip-path: polygon(
-				140px 70px,
+				139.5px 70px,
 				199.5px 70px,
 				173.5px 140px,
 				233.5px 140px,
-				259px 70px,
-				320px 70px,
-				260px 230px,
-				199px 230px,
-				225px 160px,
+				259.5px 70px,
+				319.5px 70px,
+				259.5px 230px,
+				199.5px 230px,
+				226px 160px,
 				166px 160px,
-				140px 230px,
+				139.5px 230px,
 				79.5px 230px
 			);
 		}
 	}
 </style>
+
