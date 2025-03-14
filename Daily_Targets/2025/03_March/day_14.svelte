@@ -29,16 +29,17 @@
 			height: 75px;
 			width: 240px;
 			background-color: transparent;
-			transform: translate(0, 67px);
+			transform: translate(0, 69px);
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 			grid-template-rows: 1fr;
 			column-gap: 60px;
 			& > div {
 				width: 40px;
-				height: 75px;
+				height: 74px;
 				background-color: var(--rose);
 			}
 		}
 	}
 </style>
+
