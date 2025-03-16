@@ -24,7 +24,6 @@
 			height: 140px;
 			aspect-ratio: 1;
 			background-color: var(--yellow);
-			/* opacity: 0.5; */
 			box-shadow: 0 0 0 20px var(--green);
 			&:before {
 				content: '';
@@ -41,3 +40,4 @@
 		}
 	}
 </style>
+
