@@ -28,12 +28,12 @@
 			/* opacity: 0.5; */
 			clip-path: polygon(
 				0px 50px,
-				60px 0px,
-				190px 0px,
+				62px 0px,
+				188px 0px,
 				100% 50px,
 				100% 90px,
-				190px 100%,
-				60px 100%,
+				188px 100%,
+				62px 100%,
 				0px 90px
 			);
 			&:before {
@@ -58,3 +58,4 @@
 		}
 	}
 </style>
+
