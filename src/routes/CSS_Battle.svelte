@@ -1,6 +1,5 @@
 <div class="main">
 	<div></div>
-	<div></div>
 </div>
 
 <style>
@@ -8,10 +7,9 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: content-box;
-		--white: #ffffff;
-		--green: #1a353c;
-		--yellow: #e0b673;
-        background-color:var(--white);
+		--red: #e3516e;
+		--darkred: #66284a;
+        background-color:var(--red);
 	}
 	.main {
 		height: 300px;
@@ -22,46 +20,38 @@
 		flex-wrap: wrap;
 		position: absolute;
 		overflow: hidden;
-		& > div:nth-child(1) {
+		& > div {
+			height: 80px;
+			aspect-ratio: 1/1;
 			position: absolute;
-			top: 39px;
-			height: 125px;
-			width: 240px;
-			/* opacity: 0.5; */
-			background-color: var(--green);
-            clip-path:polygon(0px 100% , 100px 0px, 140px 0px, 100% 100%);
+			background-color: var(--darkred);
+			transform: translate(-130px, -80px);
+			box-shadow:
+				260px 0 var(--darkred),
+				260px 160px var(--darkred),
+				0px 160px var(--darkred);
 			&:before {
 				content: '';
 				position: absolute;
-				top: 14px;
-				height: 14px;
-				width: 40px;
-				left: 100px;
+				height: 20px;
+				width: 340px;
 				box-shadow:
-					0 14px var(--yellow),
-					0 28px var(--yellow),
-					0 42px var(--yellow),
-					0 56px var(--yellow);
-				background-color: var(--white);
+					0 40px var(--darkred),
+					0 180px var(--darkred),
+					0 220px var(--darkred);
+				background-color: var(--darkred);
 			}
 			&:after {
 				content: '';
 				position: absolute;
-				height: 100px;
-				aspect-ratio: 1;
-				background-color: var(--white);
-				border-radius: 50%;
-				bottom: -50px;
-				left: 70px;
+				width: 20px;
+				height: 240px;
+				background-color: var(--darkred);
+				box-shadow:
+					40px 0 var(--darkred),
+					280px 0 var(--darkred),
+					320px 0 var(--darkred);
 			}
 		}
-        &>div:nth-child(2){
-            position:absolute;
-            height:136px;
-            width:200px;
-            background-color:var(--green);
-            /* opacity:0.5; */
-            bottom:0px;
-        }
 	}
 </style>
