@@ -13,7 +13,7 @@
 		--white: #ffffff;
 		--yellow: #f2a73b;
 		--red: #ea3323;
-        background-color:var(--black);
+		background-color: var(--black);
 	}
 	.main {
 		height: 300px;
@@ -82,3 +82,4 @@
 		}
 	}
 </style>
+
