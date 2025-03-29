@@ -7,10 +7,9 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: content-box;
-		--blue: #00b0c8;
-		--white: #ffffff;
-		--dark: #1a353c;
-        background-color:var(--blue);
+		--white: #ffffcd;
+		--blue: #6592cf;
+		background-color: var(--white);
 	}
 
 	.main {
@@ -20,18 +19,26 @@
 		justify-content: center;
 		align-items: center;
 		position: absolute;
+
+		overflow: hidden;
 		& > div {
-			height: 100px;
-			aspect-ratio: 1;
-			background-color: var(--white);
-			box-shadow: 0 0 0 20px var(--dark);
-			&:before {
+			position: absolute;
+			height: 180px;
+			width: 280px;
+			background-color: var(--blue);
+			&:before,
+			&:after {
 				content: '';
 				position: absolute;
-				height: 20px;
-				width: 300px;
-				background-color: white;
-				transform: translate(-100px, 40px);
+				height: 120px;
+				aspect-ratio: 1;
+				background-color: var(--blue);
+				border-radius: 50%;
+				transform: translate(-120px, 180px);
+				box-shadow: 0 0 0 60px var(--white);
+			}
+			&:after {
+				transform: translate(280px, -120px);
 			}
 		}
 	}
