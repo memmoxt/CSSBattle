@@ -1,6 +1,5 @@
 <div class="main">
 	<div></div>
-	<div></div>
 </div>
 
 <style>
@@ -8,9 +7,9 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: content-box;
-		--yellow: #f5e3b5;
-		--blue: #469dba;
-        background-color:var(--yellow);
+		--green: #5a9f48;
+		--black: #394257;
+        background-color: var(--green);
 	}
 
 	.main {
@@ -21,43 +20,33 @@
 		align-items: center;
 		position: absolute;
 		overflow: hidden;
-		& > div:nth-child(1) {
+		& > div {
 			position: absolute;
-			height: 120px;
-			width: 160px;
-			background-color: var(--blue);
-			/* opacity: 0.5; */
-			overflow: hidden;
-			&:before {
-				content: '';
-				position: absolute;
-				height: 40px;
-				aspect-ratio: 1;
-				border-radius: 50%;
-				background-color: var(--blue);
-				transform: translate(140px, 40px);
-				box-shadow: 0 0 0 20px var(--yellow);
-			}
+            transform:translate(0 ,-40px);
+            height:80px;
+            width:200px;
+            background-color: var(--black);
+            &:before{
+                content:'';
+                position: absolute;
+                transform: translate(55px ,110px);
+                height:120px;
+                width:30px;
+                background-color: var(--black);
+                box-shadow: 60px 0 var(--black);
+            }
+            &:after{
+                position: absolute;
+                content: '';
+                height:100px;
+                aspect-ratio: 1;
+                border-radius:50%;
+                transform:translate(50px,30px);
+                box-shadow:0 0 0 30px var(--black);
+                background-color: var(--green);
+            }
 		}
 
-		& > div:nth-child(2) {
-			position: absolute;
-			height: 80px;
-			aspect-ratio: 1;
-			background-color: var(--blue);
-			border-radius: 50%;
-			transform: translate(-80px);
-			/* opacity: 0.5; */
-			&:before {
-				content: '';
-				position: absolute;
-				height: 40px;
-				width: 150px;
-				background-color: var(--blue);
-				/* opacity: 0.5; */
-				transform: translate(195px, 20px);
-			}
-		}
 	}
 </style>
 
