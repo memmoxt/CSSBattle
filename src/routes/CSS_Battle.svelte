@@ -1,6 +1,5 @@
 <div class="main">
-	<div class=""></div>
-	<div class=""></div>
+	<div></div>
 </div>
 
 <style>
@@ -8,9 +7,9 @@
     margin: 0;
     padding: 0;
     box-sizing: content-box;
-    --purple: #2a2753;
-    --yellow: #c3c441;
-    --red: #e25c57;
+    --black: #191919;
+    --purple: #714B67;
+    --grey: #8F8F8F;
 }
 
 .main {
@@ -21,26 +20,31 @@
     align-items: center;
     position: absolute;
     overflow: hidden;
-    background-color:var(--purple);
+    background-color:var(--black);
 
     &>div {
-        position: relative;
-        height: 200px;
-        width: 200px;
+        height: 40px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        transform: translate(-123px, 12px);
+        background-color: var(--black);
         /* opacity: 0.5; */
-        clip-path: polygon(0px 95px, 100px 5px, 200px 95px, 200px 200px, 0px 200px)
-    }
-
-    &>div:nth-child(1) {
-        align-self: end;
-        transform: translate(200px);
-        background-color: var(--red);
-    }
-
-    &>div:nth-child(2) {
-        align-self: end;
-        transform: rotate(180deg) translate(200px, 100px);
-        background-color: var(--yellow);
+        box-shadow: 0 0 0 20px var(--purple), 
+            82px 0 var(--black), 
+            82px 0 0 20px var(--grey),
+            164px 0 var(--black),
+            164px 0 0 20px var(--grey),
+            246px 0 var(--black),
+            246px 0 0 20px var(--grey);
+            &:before{
+            position:absolute;
+            content:'';
+            transform:translate(122px, -40px);
+            border-radius:20px/20px;
+            height:70px;
+            width:20px;
+            background-color:var(--grey);
+        }
     }
 }
 </style>
