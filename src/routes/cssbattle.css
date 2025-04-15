@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: content-box;
-    --black: #343400;
-    --blue: #469dba;
+    --purple: #4c3ab3;
+    --red: #d96e9f;
+
 }
 
 .main {
@@ -14,33 +15,55 @@
     align-items: center;
     position: absolute;
     overflow: hidden;
-    background-color: var(--black);
+    background-color: var(--purple);
+
+    &>div:nth-child(1) {
+        z-index:2;
+        position: absolute;
+        height: 40px;
+        aspect-ratio: 1;
+        background-color: var(--red);
+        /* opacity: 0.5; */
+        transform: translate(0px, -20px);
+        border-radius: 50%;
+        &:before{
+            content:'';
+            position:absolute;
+            height:146px;
+            width:71px;
+            background-color:var(--red);
+            transform:translate(49px,14px);
+            box-shadow:-130px 0 var(--red);
+        }
+        &:after{
+            content:'';
+            position:absolute;
+            height:115px;
+            width:10px;
+            background-color:var(--purple);
+            transform:translate(-50px,14px);
+            box-shadow:130px 0 var(--purple);
+        }
+    }
+
+}
+
+.top {
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    background-color: transparent;
+    /* opacity: 0.5; */
+    transform: translate(0px, -75px);
+    overflow: hidden;
 
     &>div {
-        height: 160px;
-        width: 250px;
-        background-color: var(--blue);
+        position: absolute;
+        height: 60px;
+        aspect-ratio: 1;
+        background-color: var(--purple);
         border-radius: 50%;
-
-        /* opacity:0.5; */
-        &:before {
-            content: '';
-            position: absolute;
-            height: 50px;
-            aspect-ratio: 1;
-            background-color: var(--blue);
-            transform: translate(15px, 90px);
-        }
-
-        &:after {
-            content: '';
-            position: absolute;
-            height: 30px;
-            aspect-ratio: 1;
-            background-color: var(--black);
-            transform: translate(39px, 64px);
-            box-shadow: 70px 0 var(--black), 140px 0 var(--black);
-            border-radius: 50%;
-        }
+        transform: translate(70px, 75px);
+        box-shadow:0 0 0 31px var(--red), 0 0 0 40px var(--purple), 0 0 0 71px var(--red);
     }
 }
