@@ -1,69 +1,48 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: content-box;
-    --purple: #4c3ab3;
-    --red: #d96e9f;
+	* {
+	    margin: 0;
+	    padding: 0;
+	    box-sizing: content-box;
+	    --green: #6cb3a9;
+	    --red: #d25b70;
+	    --yellow: #f6df96;
+	}
 
-}
+	.main {
+	    height: 300px;
+	    width: 400px;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    position: absolute;
+	    overflow: hidden;
+        background-color:var(--red);
 
-.main {
-    height: 300px;
-    width: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    overflow: hidden;
-    background-color: var(--purple);
+	    &>div {
+	        position: absolute;
+	        height: 150px;
+	        width: 400px;
+	        background-color: var(--green);
+	        transform: translate(0px, 75px);
+	        /* opacity: 0.5; */
 
-    &>div:nth-child(1) {
-        z-index:2;
-        position: absolute;
-        height: 40px;
-        aspect-ratio: 1;
-        background-color: var(--red);
-        /* opacity: 0.5; */
-        transform: translate(0px, -20px);
-        border-radius: 50%;
-        &:before{
-            content:'';
-            position:absolute;
-            height:146px;
-            width:71px;
-            background-color:var(--red);
-            transform:translate(49px,14px);
-            box-shadow:-130px 0 var(--red);
-        }
-        &:after{
-            content:'';
-            position:absolute;
-            height:115px;
-            width:10px;
-            background-color:var(--purple);
-            transform:translate(-50px,14px);
-            box-shadow:130px 0 var(--purple);
-        }
-    }
+	        &:before {
+	            content: '';
+	            position: absolute;
+	            height: 200px;
+	            aspect-ratio: 1;
+	            background-color: var(--yellow);
+	            border-radius: 50%;
+                transform:translate(100px,-100px);
+	        }
 
-}
-
-.top {
-    position: absolute;
-    height: 100px;
-    width: 200px;
-    background-color: transparent;
-    /* opacity: 0.5; */
-    transform: translate(0px, -75px);
-    overflow: hidden;
-
-    &>div {
-        position: absolute;
-        height: 60px;
-        aspect-ratio: 1;
-        background-color: var(--purple);
-        border-radius: 50%;
-        transform: translate(70px, 75px);
-        box-shadow:0 0 0 31px var(--red), 0 0 0 40px var(--purple), 0 0 0 71px var(--red);
-    }
-}
+	        &:after {
+	            content: '';
+	            position: absolute;
+	            height: 15px;
+	            width: 400px;
+	            background-color: var(--green);
+	            box-shadow: 0 25px var(--green), 0 50px var(--green), 0 75px var(--green);
+	            transform: translate(-0px, 00px);
+	        }
+	    }
+	}
