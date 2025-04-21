@@ -22,7 +22,7 @@
 		position: absolute;
 		& > div {
 			height: 150px;
-			width: 100%;
+			width: 400px;
             overflow: hidden;
 			background-color:var(--dark);
             position:absolute;
@@ -40,7 +40,7 @@
             &:after{
                 content:'';
                 position:absolute;
-                height:61px;
+                height:60px;
                 aspect-ratio:1;
                 background-color:var(--red);
                 transform:translate(60px,30px);
@@ -49,7 +49,7 @@
 		}
         &>div:nth-child(2){
 			align-self: flex-end;
-            transform:scale(-1) translate(-1px,1px);
+            transform:scale(-1) translate(0px,0px);
             &:before{
                 background-color:var(--green);
             }
@@ -60,3 +60,4 @@
         }
 	}
 </style>
+
