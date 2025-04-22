@@ -46,7 +46,6 @@
                     width:40px;
                     transform:translateY(15px);
                     background-color:var(--white);
-                    background-color:green;
                 }
                 &:after{
                     content:'';
@@ -97,3 +96,4 @@
         }
 	}
 </style>
+
