@@ -1,6 +1,5 @@
 <div class="main">
 	<div></div>
-	<div></div>
 </div>
 
 <style>
@@ -8,9 +7,6 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: content-box;
-        --red:#AC474B;
-        --white:#ffffff;
-        background-color:var(--red);
 	}
 
 	.main {
@@ -20,28 +16,31 @@
 		justify-content: center;
 		align-items: center;
 		position: absolute;
+        --orange:#F5E3B5;
+        --red:#8D424D;
+        overflow:hidden;
+        background-color:var(--orange);
         &>div{
             position:absolute;
-            height:20px;
-            aspect-ratio:1;
-            background-color:var(--red);
+            height:120px;
+            width:60px;
+            background-color:var(--orange);
+            border-radius:50px/50px;
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+            top:0;
+            box-shadow:0px 60px 0 30px var(--red), 0 0 0 30px var(--red);
             /* opacity:0.5; */
-            transform:translate(-15px , -80px);
-            border-radius:50%;
-            border-bottom-right-radius: 0%;
-            box-shadow: 0 0 0 10px var(--white);
             &:before{
                 content:'';
                 position:absolute;
-                height:60px;
+                height:30px;
                 aspect-ratio:1;
-                background-color:var(--white);
-                transform:translate(-45px, 50px);
-                box-shadow:0 80px var(--white);
+                border-radius:50%;
+                background-color:var(--red);
+                transform:translate(15px, 75px);
+                box-shadow: 0 60px var(--orange);
             }
-        }
-        &>div:nth-child(2){
-            transform: translate(15px ,-80px) scaleX(-1);
         }
 	}
 </style>
