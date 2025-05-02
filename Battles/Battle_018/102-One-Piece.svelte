@@ -84,9 +84,10 @@
             height:25px;
             width:15px;
             background-color:var(--white);
-            transform:translate(1px ,77px);
+            transform:translate(0px ,77px);
             box-shadow:20px 0 var(--white), -20px 0 var(--white);
             /* opacity:0.5; */
         }
 	}
 </style>
+
