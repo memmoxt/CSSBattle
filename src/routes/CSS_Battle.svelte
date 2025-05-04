@@ -1,9 +1,5 @@
 <div class="main">
-	<div class="box">
-		<div></div>
-		<div></div>
-		<div></div>
-	</div>
+	<div class=""></div>
 </div>
 
 <style>
@@ -11,8 +7,10 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: content-box;
-        --white:#FEFAED;
-        --purple:#9A5DCB;
+		--yellow: #fae29e;
+		--green: #4a9a86;
+		--gray: #4c4c6b;
+        background-color:var(--yellow);
 	}
 
 	.main {
@@ -23,38 +21,25 @@
 		align-items: center;
 		position: absolute;
 		overflow: hidden;
-        background-color: var(--white);
-		& > .box {
-            position:absolute;
-            height:160px;
-            width:240px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            &>div{
-                position:relative;
-                height:100%;
-                width:100%;
-                background-color: var(--purple);
-            }
-            &>div:nth-child(1){
-                grid-column: 1/2;
-                grid-row: 2/3;
-                border-bottom-right-radius:20px;
-                border-top-left-radius:20px;
-            }
-            &>div:nth-child(2){
-                grid-column:2/3;
-                grid-row: 1/2;
-                border-top-right-radius: 20px;
-                border-top-left-radius: 20px;
-            }
-            &>div:nth-child(3){
-                grid-column: 3/4;
-                grid-row:-2;
-                border-top-right-radius: 20px;
-                border-bottom-left-radius: 20px;
-            }
+		& > div {
+			position: absolute;
+			height: 40px;
+			width: 250px;
+			background-color: var(--green);
+			box-shadow: 0px 80px var(--gray);
+			transform: translate(0px, -40px);
+			&:before {
+				position: absolute;
+				content: '';
+				height: 80px;
+				width: 40px;
+				background-color: var(--green);
+				transform: translate(0px, -50px);
+				box-shadow:
+					210px 0 var(--green),
+					210px 140px var(--gray),
+					0px 140px var(--gray);
+			}
 		}
 	}
 </style>
