@@ -32,18 +32,10 @@
                 height:200px;
                 width:40px;
                 background-color:var(--red);
-                transform:translate(180px,-80px);
+                transform:translate(180px,-130px);
                 box-shadow:-40px 0 var(--yellow), 40px 0 var(--yellow);
 
 			}
-            &:after{
-                content:'';
-                position:absolute;
-                height:40px;
-                width:400px;
-                background-color:var(--red);
-
-            }
 		}
 	}
 </style>
