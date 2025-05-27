@@ -12,7 +12,7 @@
 		box-sizing: content-box;
 		--blue: #5aa4b7;
 		--white: #ebf6f0;
-        background-color:var(--blue);
+		background-color: var(--blue);
 	}
 	.main {
 		height: 300px;
