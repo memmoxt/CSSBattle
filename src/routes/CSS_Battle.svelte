@@ -1,5 +1,6 @@
 <div class="main">
-	<div></div>
+	<div class="top"></div>
+	<div class="bottom"></div>
 </div>
 
 <style>
@@ -7,10 +8,8 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: content-box;
-		--orange: #f58220;
-		--black: #282828;
-		--white: #ffffff;
-        background-color:var(--orange);
+		--purple: #594c94;
+		--green: #bfe33a;
 	}
 	.main {
 		height: 300px;
@@ -20,17 +19,41 @@
 		align-items: center;
 		position: absolute;
 		overflow: hidden;
-
-		& > div {
+        background-color:var(--purple);
+		& > .top,
+		& > .bottom {
+			position: absolute;
 			height: 80px;
-			aspect-ratio: 1;
-			background-color: var(--black);
-			border-radius: 50%;
-			box-shadow:
-				-200px -80px 0 20px var(--white),
-				-200px 80px 0 20px var(--black),
-				200px -80px 0 20px var(--black),
-				200px 80px 0 20px var(--white);
+			width: 80px;
+			background-color: var(--green);
+			transform: translate(-140px, -90px);
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+			&:before {
+				content: '';
+				position: absolute;
+				height: 60px;
+				width: 60px;
+				background-color: var(--green);
+				transform: translate(80px, 20px);
+				border-top-right-radius: 10px;
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				height: 40px;
+				width: 40px;
+				background-color: var(--green);
+				transform: translate(140px, 40px);
+				border-top-right-radius: 10px;
+				box-shadow:
+					20px 40px var(--green),
+					20px 60px var(--green);
+			}
+		}
+		& > .bottom {
+			transform: translate(140px, 90px) scale(-1);
 		}
 	}
 </style>
