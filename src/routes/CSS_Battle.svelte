@@ -1,5 +1,6 @@
 <div class="main">
 	<div></div>
+	<div></div>
 </div>
 
 <style>
@@ -7,8 +8,8 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: content-box;
-		--purple: #4f55a2;
-		--yellow: #dcc6a8;
+		--yellow: #eeb850;
+		--blue: #243d83;
 	}
 	.main {
 		height: 300px;
@@ -18,29 +19,51 @@
 		align-items: center;
 		position: absolute;
 		overflow: hidden;
-        background-color:var(--purple);
-		& > div {
+        background-color:var(--yellow);
+		& > div:nth-child(1) {
 			position: absolute;
-			height: 95px;
-			width: 190px;
-			transform: translatey(47px);
+			height: 200px;
+			width: 300px;
+			background-color: var(--blue);
+			clip-path: polygon(
+				0 60px,
+				60px 60px,
+				60px 0,
+				240px 0,
+				240px 60px,
+				300px 60px,
+				300px 200px,
+				240px 200px,
+				240px 140px,
+				60px 140px,
+				60px 200px,
+				0px 200px
+			);
+		}
+		& > div:nth-child(2) {
+			position: absolute;
+			transform: translate(0px, -30px);
+			height: 100px;
+			width: 140px;
 			background-color: var(--yellow);
-			border-bottom-left-radius: 30px;
-			border-bottom-right-radius: 30px;
-			&:before,
-			&:after {
-				content: '';
-				position: absolute;
-				height: 80px;
-				width: 30px;
-				border-radius: 50px;
-				transform: translate(-15px, -65px);
-				box-shadow: 0 0 0 10px var(--purple);
-				background-color: var(--yellow);
-			}
-			&:after {
-				transform: translate(175px, -65px);
-			}
+            &:before{
+                content:'';
+                position:absolute;
+                background-color:var(--yellow);
+                height:40px;
+                width:60px;
+                transform:translate(-60px,60px);
+                box-shadow:200px 0 var(--yellow);
+            }
+            &:after{
+                content:'';
+                position:absolute;
+                background-color:var(--yellow);
+                height:120px;
+                width:20px;
+                box-shadow:240px 0 var(--yellow);
+                transform:translate(-60px, 60px);
+            }
 		}
 	}
 </style>
