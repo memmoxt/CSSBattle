@@ -12,7 +12,7 @@
 		box-sizing: content-box;
 		--red: #d95362;
 		--white: #ebf6f0;
-        background-color:var(--white);
+		background-color: var(--white);
 	}
 	.main {
 		height: 300px;
@@ -54,9 +54,9 @@
 			background-color: var(--white);
 			position: absolute;
 		}
-        &> div:nth-child(4){
-            transform: translate(130px, 65px) rotate(0deg);
-            background-color:var(--red);
-        }
+		& > div:nth-child(4) {
+			transform: translate(130px, 65px) rotate(0deg);
+			background-color: var(--red);
+		}
 	}
 </style>
