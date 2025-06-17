@@ -17,7 +17,7 @@
 		--stone: #f4dcbf;
 		--slate: #556d7f;
 		--brown: #3c342a;
-        background-color: var(--stone);
+		background-color: var(--stone);
 	}
 	.main {
 		height: 300px;
@@ -35,12 +35,12 @@
 			grid-template-rows: repeat(2, 1fr);
 			justify-content: center;
 			align-items: center;
-            background-color: var(--slate);
+			background-color: var(--slate);
 			& > div {
 				height: 20px;
 				width: 40px;
 				place-self: center;
-                background-color: var(--stone);
+				background-color: var(--stone);
 			}
 			& > div:nth-child(1),
 			div:nth-child(3),
