@@ -7,10 +7,9 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: content-box;
-		--green: #5a9f48;
-		--yellow: #fade8b;
-		--red: #d24444;
-		background-color: var(--green);
+		--rose: #ec007b;
+		--pink: #f7bed9;
+		background-color: var(--pink);
 	}
 	.main {
 		height: 300px;
@@ -20,28 +19,24 @@
 		align-items: center;
 		position: absolute;
 		overflow: hidden;
-		& > div,
-		& > div:before {
-			content: '';
-			position: absolute;
-			height: 160px;
-			width: 120px;
-			background-color: var(--yellow);
-			/* opacity: 0.5; */
-			border-radius: 30px/30px;
-		}
-		& > div:before {
-			background-color: var(--yellow);
-			transform: rotate(90deg);
-		}
-		& > div:after {
-			content: '';
-			position: absolute;
-			height: 60px;
-			aspect-ratio: 1;
-			transform: translate(30px, 50px);
-			border-radius: 50%;
-			background-color: var(--red);
+		& > div {
+			height: 50px;
+			width: 200px;
+			background-color: var(--rose);
+			transform: translate(-100px, -35px);
+			box-shadow:
+				250px 0 var(--rose),
+				200px 70px var(--rose),
+				-50px 70px var(--rose);
+			&:before {
+				content: '';
+				position: absolute;
+				height: 50px;
+				width: 150px;
+				transform: translate(150px, -50px);
+				box-shadow: -50px 170px var(--rose);
+				background-color: var(--rose);
+			}
 		}
 	}
 </style>
