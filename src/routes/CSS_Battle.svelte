@@ -1,10 +1,14 @@
 <div class="main">
-	<div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-	</div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
 </div>
 
 <style>
@@ -12,47 +16,38 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: content-box;
-		--blue: #4f77ff;
-		--white: #eff8fe;
-        background-color:var(--white)
+		--red: #ce636f;
+		--pink: #f7bed9;
+		--darkred: #b44141;
+		background-color: var(--red);
 	}
 	.main {
 		height: 300px;
 		width: 400px;
-		display: flex;
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-rows: repeat(4, 1fr);
 		justify-content: center;
 		align-items: center;
 		overflow: hidden;
+		/* opacity: 0.5; */
 		& > div {
-            margin-top:10px;
-            margin-right:10px;
-			height: 210px;
-			width: 310px;
-			display: flex;
-			gap: 0px 60px;
-			justify-content: end;
-			align-items: start;
-			background-color: var(--blue);
-			/* opacity: 0.5; */
-			&:before,
-			&:after {
-				content: '';
-				position: absolute;
-				height: 100px;
-				width: 60px;
-				background-color: var(--white);
-				translate: -30px 0px;
-			}
-			&:after {
-				translate: -210px -0px;
-				height: 60px;
-				width: 60px;
-			}
-			& > div {
-				height: 200px;
-				width: 30px;
-				background-color: var(--white);
-			}
+			height: 80px;
+			aspect-ratio: 1;
+			background-color: var(--darkred);
+		}
+		& > div:nth-child(2n + 1) {
+			background-color: var(--pink);
+		}
+		& > div:nth-child(7) {
+			border-bottom-left-radius: 50%;
+		}
+		& > div:nth-child(9) {
+			border-bottom-right-radius: 50%;
+		}
+		& > div:nth-child(6),
+		div:nth-child(10) {
+			background-color: var(--red);
 		}
 	}
 </style>
