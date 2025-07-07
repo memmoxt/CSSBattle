@@ -9,7 +9,7 @@
 		box-sizing: content-box;
 		--green: #48bf7d;
 		--purple: #32295a;
-        background-color:var(--purple);
+		background-color: var(--purple);
 	}
 	.main {
 		height: 300px;
@@ -24,13 +24,13 @@
 			width: 400px;
 			translate: -30px -20px;
 			overflow: hidden;
-            &>div{
-                height:500px;
-                aspect-ratio:1;
-                background-color:var(--green);
-                border-radius:50%;
-                translate:30px 10px;
-            }
+			& > div {
+				height: 500px;
+				aspect-ratio: 1;
+				background-color: var(--green);
+				border-radius: 50%;
+				translate: 30px 10px;
+			}
 		}
 	}
 </style>
