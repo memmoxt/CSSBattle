@@ -10,7 +10,7 @@
 		--black: #2e312b;
 		--white: #d9d9d9;
 		--green: #7aa70a;
-        background-color: var(--white);
+		background-color: var(--white);
 	}
 	.main {
 		height: 300px;
@@ -29,8 +29,11 @@
 				position: absolute;
 				height: 110px;
 				width: 160px;
-                translate:60px 60px;
-                box-shadow: -240px 0 var(--black), -240px -190px var(--black), 0px -190px var(--black);
+				translate: 60px 60px;
+				box-shadow:
+					-240px 0 var(--black),
+					-240px -190px var(--black),
+					0px -190px var(--black);
 				background-color: var(--black);
 			}
 		}
