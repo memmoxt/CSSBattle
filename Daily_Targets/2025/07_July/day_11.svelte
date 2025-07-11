@@ -1,3 +1,4 @@
+
 <div class="main">
 	<div>
 		<div></div>
@@ -19,7 +20,7 @@
 		--pink: #f7bed9;
 		--fuchsia: #f069ab;
 		--rose: #ec0076;
-        background-color:var(--pink);
+		background-color: var(--pink);
 	}
 	.main {
 		height: 300px;
