@@ -9,7 +9,7 @@
 		box-sizing: content-box;
 		--blue: #2f5a76;
 		--yellow: #f5bb60;
-		background-color:var(--blue);
+		background-color: var(--blue);
 	}
 	.main {
 		height: 300px;
@@ -34,7 +34,7 @@
 				width: 270px;
 				translate: 110px -135px;
 				background-color: var(--yellow);
-                box-shadow: 0px 270px var(--yellow);
+				box-shadow: 0px 270px var(--yellow);
 			}
 		}
 	}
