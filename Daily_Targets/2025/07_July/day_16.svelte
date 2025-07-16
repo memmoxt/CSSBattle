@@ -7,9 +7,9 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: content-box;
-        --purple:#32295A;
-        --green:#48BF7D;
-        background-color:var(--purple);
+		--purple: #32295a;
+		--green: #48bf7d;
+		background-color: var(--purple);
 	}
 	.main {
 		height: 300px;
