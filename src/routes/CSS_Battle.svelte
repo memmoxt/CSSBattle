@@ -7,10 +7,10 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: content-box;
-		--yellow: #fade8b;
-		--green: #48bf7d;
-		--white: #ffffff;
-        background-color:var(--yellow);
+		--gray: #423f36;
+		--slate: #bbbbbb;
+		--red: #ec2f28;
+        background-color: var(--gray);
 	}
 	.main {
 		height: 300px;
@@ -20,30 +20,32 @@
 		align-items: center;
 		overflow: hidden;
 		& > div {
-			height: 40px;
-			width: 140px;
-			background-color: var(--green);
-			border-radius: 50px/50px;
-			translate: 0px 5px;
-			box-shadow: 0px 40px var(--green);
-			&:before {
-				content: '';
-				position: absolute;
-				height: 100px;
-				aspect-ratio: 1;
-				border-radius: 50%;
-				translate: 20px -50px;
-				background-color: var(--green);
-			}
+			height: 50px;
+			width: 50px;
+			background-color: var(--slate);
+			translate: 0px -95px;
+			border-radius: 50%;
 			&:after {
 				content: '';
 				position: absolute;
-				background-color: var(--white);
-				height: 15px;
-				border-radius: 50%;
-				aspect-ratio: 1;
-				translate: 43px -13px;
-                box-shadow: 40px 0 var(--white);
+				height: 20px;
+				width: 80px;
+				background-color: var(--red);
+				translate: -15px 170px;
+				border-bottom-left-radius: 10px;
+				border-bottom-right-radius: 10px;
+			}
+			&:before {
+				content: '';
+				position: absolute;
+				height: 160px;
+				width: 100px;
+				background-color: var(--gray);
+				translate: -25px 40px;
+				border-radius: 20px/20px;
+				box-shadow:
+					0px 0px 0 10px var(--slate),
+					0 0 0 20px var(--gray);
 			}
 		}
 	}
