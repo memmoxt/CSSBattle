@@ -20,8 +20,8 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: content-box;
-        --yellow:#F2EAA8;
-        --red:#C05F6A;
+		--yellow: #f2eaa8;
+		--red: #c05f6a;
 	}
 	.main {
 		height: 300px;
@@ -30,7 +30,7 @@
 		justify-content: center;
 		align-items: center;
 		overflow: hidden;
-			background-color:var(--red) ;
+		background-color: var(--red);
 		& > div {
 			height: 210px;
 			width: 270px;
@@ -53,19 +53,19 @@
 			div:nth-child(6) {
 				width: 50px;
 			}
-            &>div:nth-child(7){
-                justify-self:end;
-            }
+			& > div:nth-child(7) {
+				justify-self: end;
+			}
 			& > div:nth-child(7),
 			div:nth-child(9) {
-                width:30px;
+				width: 30px;
 			}
-            &>div:nth-child(10){
-                justify-self:end;
-            }
+			& > div:nth-child(10) {
+				justify-self: end;
+			}
 			& > div:nth-child(10),
 			div:nth-child(12) {
-                width:10px;
+				width: 10px;
 			}
 		}
 	}
