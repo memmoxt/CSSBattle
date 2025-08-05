@@ -1,8 +1,6 @@
 <div class="main">
 	<div></div>
 	<div></div>
-	<div></div>
-	<div></div>
 </div>
 
 <style>
@@ -11,9 +9,11 @@
 		padding: 0;
 		/* box-sizing: content-box; */
 		box-sizing: border-box;
+		--black: #423f36;
+		--yellow: #feff58;
 		--red: #d94e4e;
-		--yellow: #ebe77e;
-        background-color:var(--red);
+		--blue: #3e5aa9;
+        background-color:var(--black);
 	}
 	.main {
 		height: 300px;
@@ -23,39 +23,32 @@
 		align-items: center;
 		overflow: hidden;
 		position: absolute;
-
-		& > div:nth-child(1),
-		& > div:nth-child(2) {
-			height: 240px;
-			width: 60px;
-			background-color: var(--red);
-			translate: -140px;
-			border-top-right-radius: 25px;
-			border-bottom-right-radius: 25px;
-			border-top-left-radius: 35px;
-			border-bottom-left-radius: 35px;
-			box-shadow: 280px 0 var(--red);
-			z-index: 5;
+		& > div:nth-child(1) {
+			height: 100px;
+			width: 400px;
+			background-color: var(--yellow);
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				translate: -125px 20px;
+				height: 60px;
+				width: 250px;
+				border-radius: 50%;
+				background-color: var(--red);
+			}
+			&:after {
+				translate: 275px 20px;
+				background-color: var(--blue);
+			}
 		}
-		& > div:nth-child(2) {
-			position: absolute;
-			box-shadow:
-				280px 0 0 20px var(--yellow),
-				0px 0 0 20px var(--yellow);
-			z-index: 2;
-		}
-		& > div:nth-child(3) {
-			position: absolute;
-			height: 40px;
-			width: 380px;
-			background-color: var(--red);
-			z-index: 6;
-		}
-        &>div:nth-child(4){
+        &>div:nth-child(2){
             position:absolute;
-            background-color:var(--yellow);
-            height:80px;
-            width:380px;
+            height:102px;
+            aspect-ratio:1;
+            background-color:var(--black);
+            border-radius:20px;
+            transform:translateY(72px) rotate(-45deg);
         }
 	}
 </style>
