@@ -1,6 +1,17 @@
 <div class="main">
 	<div>
 		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
 	</div>
 </div>
 
@@ -9,9 +20,9 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
-		--beige: #e8ad6d;
-		--brown: #3b240c;
-        background-color:var(--beige);
+        --red:#DE6B67; 
+        --white:#FCEBEB;
+        background-color:var(--white);
 	}
 	.main {
 		height: 300px;
@@ -21,36 +32,55 @@
 		align-items: center;
 		overflow: hidden;
 		position: absolute;
-		& > div {
-			height: 120px;
-			width: 280px;
-            position:absolute;
-            overflow: hidden;
-			& > div {
-				height: 50px;
-				width: 280px;
-				background-color: var(--brown);
-				&:before {
-					content: '';
-					position: absolute;
-					height: 40px;
-					border-radius: 50%;
-					aspect-ratio: 1;
-					background-color: var(--beige);
-					translate: 30px 100px;
-					box-shadow:
-						0 0 0 30px var(--brown),
-						180px 0 0 0 var(--beige),
-						180px 0 0 30px var(--brown);
-				}
-				&:after {
-					content: '';
-					position: absolute;
-					height: 50px;
-					width: 60px;
-					background-color: var(--brown);
-                    translate: 110px 70px;
-				}
+		& > div:nth-child(1) {
+			height: 260px;
+			width: 300px;
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+			grid-template-rows: repeat(13, 1fr);
+            &>div{
+				background-color: var(--red);
+            }
+			& > div:nth-child(odd) {
+				grid-column: 3/4;
+			}
+			& > div:nth-child(even) {
+			}
+			& > div:nth-child(1) {
+				grid-row: -1/-2;
+			}
+			& > div:nth-child(3) {
+				grid-row: -3/-4;
+			}
+			& > div:nth-child(5) {
+				grid-row: -5/-6;
+			}
+			& > div:nth-child(7) {
+				grid-row: 5/6;
+			}
+			& > div:nth-child(9) {
+				grid-row: 3/4;
+			}
+			& > div:nth-child(11) {
+				grid-row: 1/2;
+			}
+			& > div:nth-child(2) {
+				grid-area: 7/1/8/2;
+			}
+			& > div:nth-child(4) {
+				grid-area: 6/2/7/3;
+			}
+			& > div:nth-child(6) {
+				grid-area: 8/2/9/3;
+			}
+			& > div:nth-child(8) {
+				grid-area: 8/4/9/5;
+			}
+			& > div:nth-child(10) {
+				grid-area: 6/4/6/5;
+			}
+			& > div:nth-child(12) {
+				grid-area: 7/5/8/6;
 			}
 		}
 	}
