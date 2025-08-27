@@ -59,6 +59,6 @@
 		height: 80px;
 		border-radius: 50%;
 		aspect-ratio: 1;
-        background-color: var(--gray);
+		background-color: var(--gray);
 	}
 </style>
