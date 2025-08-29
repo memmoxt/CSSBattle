@@ -9,7 +9,7 @@
 		box-sizing: border-box;
 		--beige: #f1e1be;
 		--brown: #7c7565;
-		background-color: var(--brown);
+        background-color:var(--brown);
 	}
 	.main {
 		height: 300px;
