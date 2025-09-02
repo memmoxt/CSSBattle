@@ -10,7 +10,7 @@
 		box-sizing: border-box;
 		--blue: #5dbcf9;
 		--yellow: #ffffcd;
-			background-color: var(--blue);
+		background-color: var(--blue);
 	}
 	.main {
 		height: 300px;
@@ -47,8 +47,8 @@
 				translate: 118px;
 			}
 		}
-        &>div:nth-child(2){
-            transform: translate(140px) scale(-1);
-        }
+		& > div:nth-child(2) {
+			transform: translate(140px) scale(-1);
+		}
 	}
 </style>
