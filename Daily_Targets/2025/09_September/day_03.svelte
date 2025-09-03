@@ -32,19 +32,20 @@
                 content:'';
                 position:absolute;
                 height: 260px;
-                width: 45px;
+                width: 45.5px;
                 background-color:var(--blue);
-                translate: 39px -74px;
+                translate: 38px -75px;
             }
             &:after{
                 content:'';
                 position:absolute;
-                height:45px;
+                height:46px;
                 width: 250px;
                 background-color: var(--blue);
-                translate: -66px 39px;
+                translate: -66px 38px;
             }
 		}
 
 	}
 </style>
+
