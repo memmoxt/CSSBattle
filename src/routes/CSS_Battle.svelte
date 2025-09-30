@@ -7,10 +7,10 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
-        --white:#F9FAFD;
-        --lightblue:#A7C2FA;
-        --blue:#4F73D9;
-        background-color:var(--white);
+		--purple: #9382e4;
+		--blue: #b6ebe7;
+		--black: #3f595e;
+        background-color: var(--purple);
 	}
 	.main {
 		height: 300px;
@@ -20,31 +20,39 @@
 		align-items: center;
 		overflow: hidden;
 		position: absolute;
-        &>div{
-            position:absolute;
-            height: 160px;
-            aspect-ratio:1;
-            background-color: var(--lightblue);
-            border-radius:50%;
-            overflow:hidden;
-            &:before{
-                content:'';
-                position:absolute;
-                height: 60px;
-                aspect-ratio:1;
-                background-color:var(--blue);
-                border-radius:50%;
-                translate: 50px 20px;
-            }
-            &:after{
-                content:'';
-                position:absolute;
-                height: 100px;
-                width:120px;
-                background-color:var(--blue);
-                translate: 20px 92px;
-                border-radius: 80px/75px;
-            }
-        }
+		& > div {
+			height: 60px;
+			width: 28px;
+			background-color: var(--blue);
+			position: absolute;
+			translate: -126px -90px;
+			box-shadow:
+				70px 60px var(--blue),
+				140px 120px var(--blue),
+				210px 180px var(--blue);
+			&:before {
+				content: '';
+				position: absolute;
+				height: 28px;
+				width: 55px;
+				translate: 20px 32px;
+				background-color: var(--blue);
+				box-shadow:
+					70px 60px var(--blue),
+					140px 120px var(--blue),
+					205px 180px var(--blue);
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				height: 28px;
+				aspect-ratio: 1;
+				background-color: var(--black);
+				translate: 70px 32px;
+				box-shadow:
+					70px 60px var(--black),
+					140px 120px var(--black);
+			}
+		}
 	}
 </style>
