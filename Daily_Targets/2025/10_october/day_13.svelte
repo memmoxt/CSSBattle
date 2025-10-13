@@ -10,7 +10,7 @@
 		box-sizing: border-box;
 		--green: #4a9a86;
 		--yellow: #fae29e;
-        background-color: var(--green);
+		background-color: var(--green);
 	}
 	.main {
 		height: 300px;
@@ -37,9 +37,9 @@
 				background-color: var(--green);
 			}
 		}
-        &>div:nth-child(2){
-            translate: 80px;
-            transform: scaleY(-1);
-        }
+		& > div:nth-child(2) {
+			translate: 80px;
+			transform: scaleY(-1);
+		}
 	}
 </style>
