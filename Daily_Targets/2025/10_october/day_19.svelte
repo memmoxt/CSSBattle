@@ -18,7 +18,7 @@
 		align-items: center;
 		overflow: hidden;
 		position: absolute;
-		background-color: var(--darkgreen);
+        background-color: var(--darkgreen);
 		& > div {
 			position: absolute;
 			height: 30px;
