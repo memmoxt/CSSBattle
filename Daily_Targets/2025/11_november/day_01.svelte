@@ -9,7 +9,7 @@
 		box-sizing: border-box;
 		--blue: #243d83;
 		--yellow: #f0cd48;
-		background-color:var(--blue);
+        background-color:var(--blue);
 	}
 	.main {
 		height: 300px;
@@ -19,13 +19,11 @@
 		align-items: center;
 		overflow: hidden;
 		position: absolute;
-
 		& > div {
 			position: absolute;
 			height: 40px;
 			width: 320px;
 			background-color: var(--yellow);
-			box-shadow: 0px -160px var(--yellow);
 			translate: 0px 80px;
 			&:before {
 				content: '';
@@ -45,9 +43,9 @@
 				aspect-ratio: 1;
 				background-color: var(--yellow);
 				box-shadow:
-					115px 0px var(--yellow),
-					230px -0px var(--yellow);
-				translate: 25px -80px;
+					115px -120px var(--yellow),
+					230px 0px var(--yellow);
+				translate: 25px -40px;
 			}
 		}
 	}
