@@ -1,4 +1,3 @@
-<!-- /home/memmoxt/Documents/study/svelte/CSSBattle/src/lib/images/today.png -->
 <div class="main">
 	<div></div>
 </div>
