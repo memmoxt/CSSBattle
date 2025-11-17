@@ -1,4 +1,4 @@
-<!-- /home/memmoxt/Documents/study/svelte/CSSBattle/src/lib/images/today.png -->
+<!-- https://cssbattle.dev/play/104 -->
 <div class="main">
 	<div></div>
 	<div></div>
