@@ -1,5 +1,10 @@
 <div class="main">
-	<div></div>
+	<div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
 </div>
 
 <style>
@@ -7,8 +12,10 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
-		--orange: #d86f45;
-		--white: #ffffff;
+		--white: #eed9d9;
+		--green: #668884;
+		--orange: #c67455;
+        background-color:var(--white);
 	}
 	.main {
 		height: 300px;
@@ -18,30 +25,35 @@
 		align-items: center;
 		overflow: hidden;
 		position: absolute;
-        background-color:var(--orange);
 		& > div {
-			height: 50px;
-			width: 250px;
-			background-color: var(--orange);
-			box-shadow: 0 0 0 20px var(--white);
-			&:before {
-				content: '';
-				position: absolute;
-				translate: 100px -60px;
-				box-shadow:
-					0 0 0 20px var(--white),
-					0 0 0 30px var(--orange);
-				height: 170px;
-				width: 50px;
-				background-color: var(--orange);
+			position: absolute;
+			height: 150px;
+			width: 150px;
+			display: grid;
+			grid-template-rows: repeat(3, 1fr);
+			grid-template-columns: repeat(3, 1fr);
+			& > div {
+				height: 100%;
+				width: 100%;
+				border-top-left-radius: 50px;
+				border-bottom-left-radius: 50px;
 			}
-			&:after {
-				content: '';
-				position: absolute;
-				height: 30px;
-				width: 150px;
-				background-color: var(--orange);
-				translate: 50px 10px;
+			& > div:nth-child(1),
+			div:nth-child(4) {
+                background-color:var(--green);
+				grid-column: 2/3;
+			}
+			& > div:nth-child(4) {
+				grid-row: -1/-2;
+			}
+			& > div:nth-child(2),
+			div:nth-child(3) {
+                background-color: var(--orange);
+				grid-row: 2/3;
+			}
+			& > div:nth-child(3) {
+				grid-column: 3/4;
+				transform: rotate(180deg);
 			}
 		}
 	}
