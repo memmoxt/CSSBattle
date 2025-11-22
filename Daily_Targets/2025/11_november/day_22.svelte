@@ -9,6 +9,7 @@
 		box-sizing: border-box;
 		--blue: #328fc1;
 		--yellow: #f5d6b4;
+        background-color:var(--blue);
 	}
 	.main {
 		height: 300px;
@@ -47,3 +48,4 @@
 		}
 	}
 </style>
+
