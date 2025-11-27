@@ -1,7 +1,6 @@
 <div class="main">
 	<div></div>
 	<div></div>
-	<div></div>
 </div>
 
 <style>
@@ -9,9 +8,9 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
-		--purple: #62306d;
-		--white: #ffffff;
-        background-color:var(--purple);
+		--black: #3f4869;
+		--green: #70b7a5;
+        background-color: var(--black);
 	}
 	.main {
 		height: 300px;
@@ -22,49 +21,43 @@
 		overflow: hidden;
 		position: absolute;
 		& > div:nth-child(1) {
-			height: 280px;
-			aspect-ratio: 1;
-			background-color: var(--white);
-			border-radius: 50%;
-			translate: 0 20px;
-
+			height: 260px;
+			width: 260px;
+			background-color: var(--green);
 			&:before {
 				content: '';
 				position: absolute;
-				height: 80px;
-				translate: 0 20px;
-				border-radius: 50%;
+				height: 40px;
 				aspect-ratio: 1;
-				background-color: var(--purple);
-				translate: 100px 100px;
+				background-color: var(--black);
+				box-shadow:
+					220px 0px var(--black),
+					-5px 220px var(--black),
+					215px 220px var(--black),
+					220px 220px var(--black),
+					110px 110px 0px 5px var(--black),
+					43px 42px 0 22px var(--black),
+					177px 42px 0 22px var(--black),
+					177px 177px 0 22px var(--black),
+					42px 177px 0 22px var(--black);
 			}
 			&:after {
 				content: '';
 				position: absolute;
-				height: 110px;
-				width: 400px;
-				background-color: var(--purple);
-				translate: -60px 160px;
-				box-shadow: 0 0 0 20px var(--white);
+				height: 150px;
+				width: 20px;
+				translate: 20px 5px;
+				background-color: var(--black);
+				box-shadow: 200px 10px var(--black);
 			}
 		}
-		&>div:nth-child(2){
-		    position:absolute;
-		    height: 150px;
-		    width:400px;
-		    translate:0 95px;
-		    clip-path:polygon(0px 100px, 80px 0px, 320px 0px, 400px 100px, 400px 130px, 0px 130px);
-		    background-color:var(--purple);
-            z-index: 3;
-		}
-		& > div:nth-child(3) {
+		& > div:nth-child(2) {
 			position: absolute;
-            z-index: 2;
-			height: 150px;
-			width: 400px;
-			translate: 0 95px;
-			clip-path: polygon(0px 68px, 55px 0px, 346px 0px, 400px 68px, 400px 130px, 0px 130px);
-			background-color: var(--white);
+			height: 20px;
+			width: 100px;
+			translate: 0 99px;
+			background-color: var(--black);
+            box-shadow:0px -199px var(--black);
 		}
 	}
 </style>
