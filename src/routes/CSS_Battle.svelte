@@ -1,14 +1,5 @@
 <div class="main">
-	<div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-	</div>
+	<div></div>
 </div>
 
 <style>
@@ -16,10 +7,9 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
-		--white: #fae7df;
-		--red: #be6565;
-        background-color: var(--white);
-
+		--orange: #e38f66;
+		--white: #f7f3d7;
+        background-color: var(--orange);
 	}
 	.main {
 		height: 300px;
@@ -29,47 +19,31 @@
 		align-items: center;
 		overflow: hidden;
 		position: absolute;
-		& > div {
-			height: 270px;
-			width: 200px;
-			display: grid;
-			grid-template-columns: repeat(10, 1fr);
-			grid-template-rows: repeat(4, 1fr);
-			row-gap: 10px;
-            &>div{
-                background-color:var(--red);
+		& > div:nth-child(1) {
+			height: 140px;
+			aspect-ratio: 1;
+			background-color: var(--white);
+
+			&:before {
+				content: '';
+				position: absolute;
+				height: 70px;
+				aspect-ratio: 1;
+				background-color: var(--white);
+                translate:-70px 0px;
+                transform:translate(0px , 35px) rotate(-45deg) ;
+                box-shadow: 149px 149px var(--white);
+			}
+
+            &:after {
+                content:'';
+                position: absolute;
+                height: 70px;
+                aspect-ratio:1;
+                background-color: var(--white);
+                translate: -140px 35px;
+                box-shadow: 350px 0px var(--white);
             }
-			& > div:nth-child(1),
-			div:nth-child(4),
-			div:nth-child(5),
-			div:nth-child(8) {
-				position: relative;
-				height: 60px;
-				width: 100%;
-			}
-			& > div:nth-child(2),
-			div:nth-child(3),
-			div:nth-child(6),
-			div:nth-child(7) {
-				position: relative;
-				height: 60px;
-				width: 100%;
-			}
-			& > div:nth-child(1),
-			& > div:nth-child(5) {
-				grid-column: 1/4;
-			}
-			& > div:nth-child(2),
-			& > div:nth-child(6) {
-				grid-column: 5/-1;
-			}
-			& > div:nth-child(3),
-			& > div:nth-child(7) {
-				grid-column: 1/7;
-			}
-			& > div:nth-child(4),div:nth-child(8) {
-				grid-column: 8/-1;
-			}
 		}
 	}
 </style>
