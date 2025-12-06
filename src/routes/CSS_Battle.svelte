@@ -1,6 +1,5 @@
 <div class="main">
 	<div><div></div></div>
-
 </div>
 
 <style>
@@ -8,11 +7,9 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
-		--green: #32955e;
-		--white: #ffffff;
-		--black: #000000;
-        background-color: var(--green);
-        
+		--blue: #243d83;
+		--yellow: #f0cd48;
+        background-color:var(--blue);
 	}
 	.main {
 		height: 300px;
@@ -23,31 +20,20 @@
 		overflow: hidden;
 		position: absolute;
 		& > div {
-			height: 140px;
-			width: 200px;
-			translate: 0 80px;
-			background-color: var(--white);
-			border-top-right-radius: 140px;
-			border-top-left-radius: 70px;
-            overflow:hidden;
-            &>div{
-                height: 40px;
-                width: 80px;
-                background-color:var(--green);
-                translate: 150px 90px;
-                border-radius: 50px/50px;
-                &:before{
-                    content:'';
-                    position:absolute;
-                    height: 20px;
-                    border-radius:50%;
-                    aspect-ratio:1;
-                    background-color: var(--black);
-                    translate: -20px -30px;
-
-                }
-
-            }
+			height: 150px;
+			aspect-ratio: 1;
+			background-color: var(--yellow);
+			border-radius: 40px / 40px;
+			border: 10px solid var(--yellow);
+			overflow: hidden;
+			& > div {
+				height: 300px;
+				border-radius: 50%;
+				aspect-ratio: 1;
+				background-color: transparent;
+				translate: -85px 75px;
+				box-shadow: 0 0 0 50px var(--blue);
+			}
 		}
 	}
 </style>
