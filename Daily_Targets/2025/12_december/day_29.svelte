@@ -9,7 +9,7 @@
 		box-sizing: border-box;
 		--orange: #e38f66;
 		--white: #fffbda;
-        background-color:(--orange);
+        background-color:var(--orange);
 	}
 	.main {
 		height: 300px;
